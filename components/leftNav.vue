@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="w-1/4">
       <h1 class="text-3xl font-normal text-[#E72B6F]">Benvenuto/a</h1>
       <span class="text-3xl font-bold text-[#E72B6F]">Michela</span>
       <div class="flex flex-col w-72 mt-6 table-border-collapse border-2  rounded-xl">

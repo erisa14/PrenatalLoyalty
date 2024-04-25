@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#f7f7f7] px-7 py-10 text-center rounded-2xl grid grid-col gap-10">
+    <div class="bg-[#f7f7f7] px-7 py-9 text-center rounded-2xl grid grid-col gap-24">
         <div>
             <h1 class="text-2xl font-semibold text-[#E72B6F] tracking-tight">Profilo Completato al</h1>
             <div id="app">
@@ -74,7 +74,7 @@ export default defineComponent({
             ],
             activeSlide: 0,
 
-            size: 150,
+            size: 220,
       percentage: 65, 
       backgroundStrokeWidth: 6, 
       foregroundStrokeWidth: 7

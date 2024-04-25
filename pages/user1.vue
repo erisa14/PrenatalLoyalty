@@ -2,7 +2,7 @@
     <Navbar />
     <div class="max-w-screen-2xl mx-auto flex flex-col mt-16">
         <div class="flex flex-row gap-7 mx-auto ">
-        <div class="w-1/4">
+        <div>
           <LeftNav/>
         </div>
       <div class="flex flex-col gap-4 w-2/4">
@@ -11,11 +11,11 @@
                     <div class=" flex flex-row gap-6">
                         <div class="">
                             <img src="/assets/vip_card.png" class="rounded-xl" alt="Prenatal Card">
-                            <h2 class="-translate-y-10 text-center font-bold text-lg">{{ cardNumber }}</h2>
+                            <h2 class="-translate-y-10 text-center font-semibold text-xl tracking-wider">{{ cardNumber }}</h2>
                         </div>
                         <div class="flex flex-col gap-1 w-1/2">
                             <h2 class="text-[#e73b7a] text-lg tracking-tighter font-semibold">Numero Card:</h2>
-                            <p class=" font-bold">{{ cardNumber }}</p>
+                            <p class=" font-semibold text-xl tracking-wider">{{ cardNumber }}</p>
                             <div class="flex flex-row gap-2 text-lg tracking-tighter">
                                 <h2 class="text-[#e73b7a] font-semibold">Stato:</h2>
                                 <h3>Attiva</h3>
@@ -75,7 +75,7 @@
                 </article>
 
                 <profileCompletato />
-                <div class="grid grid-col gap-7 px-9 py-10 rounded-3xl border border-gray-300">
+                <div class="grid grid-col gap-5 px-9 py-10 rounded-3xl border border-gray-300">
                     <h1 class="text-[#e82770] text-2xl font-semibold">Invita un amico</h1>
                     <div>
                         <p class="text-lg tracking-tight leading-5 ">Condividi i link con un tuo amico e ricevi uno

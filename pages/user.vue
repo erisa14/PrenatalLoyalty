@@ -3,20 +3,20 @@
     <div class="max-w-screen-2xl mx-auto flex flex-col mt-16">
 
       <div class="flex flex-row gap-7 mx-auto ">
-        <div class="w-1/4">
+        <div>
           <LeftNav/>
         </div>
       <div class="flex flex-col gap-4 w-2/4">
-        <div class="bg-[#f9eced] px-6 pt-5 pb-16 rounded-3xl">
+        <div class="bg-[#f9eced] px-6 pt-5 pb-24 rounded-3xl">
         <h1 class="text-[#e73b7a] text-xl font-bold tracking-tighter py-5">La tua Card</h1>
         <div class=" flex flex-row gap-6">
-          <div class="">
-          <img src="/assets/prenatal_card.png" class="rounded-xl" alt="Prenatal Card">
-          <h2 class="-translate-y-10 text-center font-bold text-lg">{{ cardNumber }}</h2>
+          <div>
+          <img src="/assets/prenatal_card.png" class="rounded-2xl w-auto h-64" alt="Prenatal Card">
+          <h2 class="-translate-y-10 text-center font-semibold text-xl tracking-wider">{{ cardNumber }}</h2>
         </div>
         <div>
           <h2 class="text-[#e73b7a] text-lg tracking-tighter font-semibold">Numero Card:</h2>
-          <p class=" font-bold">{{ cardNumber }}</p>
+          <p class=" font-semibold text-xl tracking-wider">{{ cardNumber }}</p>
           <p class="flex text-lg gap-2 tracking-tighter"><h2 class="text-[#e73b7a] font-semibold">Stato:</h2>Attiva</p>
         </div>
         </div>
@@ -26,14 +26,14 @@
       
     </div>
     
-        <div class="grid grid-col gap-3 w-1/4">
-            <div class="grid grid-col gap-2 bg-[#eaf1fd] px-7 py-10 text-center rounded-2xl">
+        <div class="grid grid-col gap-4 w-1/4">
+            <div class="grid grid-col gap-6 bg-[#eaf1fd] px-7 py-6 text-center rounded-2xl">
                 <h1 class="text-2xl font-bold text-[#E72B6F]">Passa a VIP Club
                 </h1>
                 <h3 class="text-md tracking-tight mx-auto font-bold w-2/3">Scopri tutti i vantaggi che ti aspettano</h3>
 
                 <Carousel :autoplay="8000" :wrap-around="true" :items-to-show="1" @after-change="updateActiveSlide"
-                    v-model="activeSlide" class="mt-6">
+                    v-model="activeSlide">
                     <Slide v-for="(quote, index) in quotes" :key="index">
                         <div class="carousel-content bg-[white]" :class="{ 'active-quote': index === activeSlide }"
                             v-html="quote"></div>
@@ -48,7 +48,7 @@
                     CARD</a>
             </div>
             <profileCompletato/>
-            <div class="grid grid-col gap-7 px-9 py-10 rounded-3xl border border-gray-300">
+            <div class="grid grid-col gap-6 px-9 py-10 rounded-3xl border border-gray-300">
                 <h1 class="text-[#e82770] text-2xl font-semibold">Invita un amico</h1>
                 <div>
                     <p class="text-lg tracking-tight leading-5 ">Condividi i link con un tuo amico e ricevi uno sconto di 10 euro.</p>

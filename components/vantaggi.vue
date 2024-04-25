@@ -1,5 +1,5 @@
 <template>
-    <div class="w-3/4 justify-end flex flex-col gap-8">
+    <div class="w-4/5 justify-end flex flex-col gap-8 mt-16">
         <h1 class="text-[#E72B6F] text-4xl font-bold ">Altri vantaggi esclusivi</h1>
         <h3 class="text-xl tracking-tight">Scopri le offerte attive in questo momento con i nostri partner selezionati, tutte riservate ai soli clienti registrati</h3>
         <div class="flex gap-5">

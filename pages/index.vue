@@ -448,8 +448,6 @@ export default defineComponent({
 .active-image {
   transform: scale(1.7);
   z-index: 1;
-  max-height: 100%;
-  height: 100%;
   border-radius: 0.5rem !important;
 }
 
