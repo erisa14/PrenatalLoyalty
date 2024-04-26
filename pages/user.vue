@@ -44,7 +44,7 @@
                     </template>
                 </Carousel>
                 <a href="#" type="button"
-                    class="bg-[#E72B6F] mt-6 w-4/5 mx-auto text-xl text-white py-3 px-4 rounded-3xl">ACQUISTA VIP
+                    class="bg-[#E72B6F] mt-6 w-4/5 mx-auto text-xl text-white py-3 px-4 rounded-full">ACQUISTA VIP
                     CARD</a>
             </div>
             <profileCompletato/>
