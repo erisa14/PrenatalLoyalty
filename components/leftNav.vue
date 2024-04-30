@@ -29,7 +29,7 @@ export default defineComponent({
         { name: 'I tuoi dati', url: '' },
         { name: 'I tuoi Badge', url: '' },
         { name: 'I tuoi Coupon', url: '' },
-        { name: 'Invita un amico', url: '' },
+        { name: 'Invita un amico', url: '/invitaUnAmico' },
         { name: 'Offerte esclusive', url: '/offerteEsclusive' },
         { name: 'Storico acquisti', url: '/' },
         { name: 'FAQ', url: '' },
