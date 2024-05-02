@@ -1,6 +1,6 @@
 <template>
    <footer class="bottom-0 bg-[#e82770]">
-    <div class="mx-auto flex flex-row justify-between py-5 px-36">
+    <div class="mx-auto flex flex-row justify-between py-5 px-36 sm:w-full">
       <div>
         <a class="inline-block rounded-3xl bg-[#e82770] px-6 py-5" href="#" title="Prénatal">
                 <span class="sr-only">Prénatal</span>
