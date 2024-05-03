@@ -1,5 +1,5 @@
 <template>
-    
+
     <nav>
         <Navbar />
     </nav>
@@ -122,7 +122,7 @@
             </div>
 
             <div class="bg-[#f7f7f7] flex flex-col gap-5 p-12 rounded-3xl mt-16">
-                <h1 class="text-[#e82770] text-3xl font-medium" >I tuoi inviti</h1>
+                <h1 class="text-[#e82770] text-3xl font-medium">I tuoi inviti</h1>
                 <div class="flex">
                     <p class="bg-[#e82770] rounded-l-xl p-5">
                         <svg width="72px" height="72px" viewBox="0 0 48 48" fill="none"
@@ -130,8 +130,8 @@
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
-                                <circle cx="24" cy="10" r="6"  stroke="white" stroke-width="4"
-                                    stroke-linecap="round" stroke-linejoin="round"></circle>
+                                <circle cx="24" cy="10" r="6" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round"></circle>
                                 <path d="M31 44V35L36 32L32 19C32 19 28 16 24 16C20 16 16 19 16 19L12 31L17 35V44"
                                     stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
                                 </path>
@@ -140,7 +140,8 @@
                     </p>
                     <div class="flex flex-row justify-between w-full px-8 bg-white items-center text-[#e82770]">
                         <h2 class=" text-3xl font-bold">Michele</h2>
-                        <h3 class="text-xl font-medium sm:w-[28%] border-l-2 border-gray-200 pl-3" >Registrazione effettuata</h3>
+                        <h3 class="text-xl font-medium sm:w-[28%] border-l-2 border-gray-200 pl-3">Registrazione
+                            effettuata</h3>
                     </div>
 
                 </div>
@@ -152,8 +153,8 @@
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
-                                <circle cx="24" cy="10" r="6"  stroke="white" stroke-width="4"
-                                    stroke-linecap="round" stroke-linejoin="round"></circle>
+                                <circle cx="24" cy="10" r="6" stroke="white" stroke-width="4" stroke-linecap="round"
+                                    stroke-linejoin="round"></circle>
                                 <path d="M28 44V36H38L27.2308 16H20.7692L10 36H20V44" stroke="white" stroke-width="4"
                                     stroke-linecap="round" stroke-linejoin="round"></path>
                             </g>
@@ -161,7 +162,8 @@
                     </p>
                     <div class="flex flex-row justify-between w-full px-8 bg-white items-center text-[#e82770]">
                         <h2 class=" text-3xl font-bold">Marzia</h2>
-                        <h3 class="text-xl font-medium sm:w-[28%] border-l-2 border-gray-200 pl-3">Richiesta inviata</h3>
+                        <h3 class="text-xl font-medium sm:w-[28%] border-l-2 border-gray-200 pl-3">Richiesta inviata
+                        </h3>
                     </div>
 
                 </div>
@@ -169,23 +171,15 @@
         </div>
     </div>
 
-
-
-
-
-
-
     <Footer></Footer>
 </template>
 
 
 <script>
-import { DatePicker } from '@progress/kendo-vue-dateinputs';
 
 export default defineComponent({
     name: 'LinkComponent',
     name: 'ShareButtonComponent',
-    'datepicker': DatePicker,
 
 
     setup() {
@@ -221,6 +215,6 @@ export default defineComponent({
             window.open(shareUrl, '_blank');
         },
     }
-    
+
 })
 </script>

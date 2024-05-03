@@ -26,8 +26,8 @@ export default defineComponent({
     return {
       tabs: [
         { name: 'La tua Card', url: '/user' },
-        { name: 'I tuoi dati', url: '' },
-        { name: 'I tuoi Badge', url: '' },
+        { name: 'I tuoi dati', url: '/tuoiDati' },
+        { name: 'I tuoi Badge', url: '/badges' },
         { name: 'I tuoi Coupon', url: '' },
         { name: 'Invita un amico', url: '/invitaUnAmico' },
         { name: 'Offerte esclusive', url: '/offerteEsclusive' },

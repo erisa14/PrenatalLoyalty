@@ -256,16 +256,18 @@
 
     </div>
 
-    <VipReasones/>
+    <VipReasones />
 
 
 
 
     <figure class=" relative max-w-screen-2xl mx-auto right-0 place-self-center grid mb-10 mt-20">
       <img src="assets\download.jpg" alt="image" class="rounded-3xl">
-      <figcaption class="absolute px-4 grid grid-col gap-5 text-lg font-normal font-serif w-2/5 translate-y-16 right-60 p-6">
+      <figcaption
+        class="absolute px-4 grid grid-col gap-5 text-lg font-normal font-serif w-2/5 translate-y-16 right-60 p-6">
         <h1 class=" text-4xl font-bold  text-[#e82770]">Parental Skills at Work</h1>
-        <p class="tracking-tight font-medium text-xl leading-5">Se sei un cliente VIP, accedi gratuitamente al webinar legato alla genitorialità.
+        <p class="tracking-tight font-medium text-xl leading-5">Se sei un cliente VIP, accedi gratuitamente al webinar
+          legato alla genitorialità.
           Un percorso preparato per te con partners autorevoli per riscoprire come le skills genitoriali possono
           dare una marcia in più in famiglia e nella professione.</p>
         <a class="bg-[#e82770] font-xl w-1/3 text-center px-5 py-3 rounded-full text-white">ACCEDI SUBITO
@@ -353,7 +355,7 @@ export default defineComponent({
         { url: 'https://www.richmonditalia.it/wp-content/themes/yootheme/cache/Elty-c9c630f5.jpeg' },
         { url: 'https://www.bitrefill.com/primg/w350h212/lastminute_com-belgium-holiday-flight-_-hotel-packages-belgium.webp' },
         { url: 'https://storage.googleapis.com/prg-loyalty.appspot.com/media/93/CLINIQUE_IMMAGINE-ANTEPRIMA.png' },
-        { url: 'https://storage.googleapis.com/prg-loyalty.appspot.com/media/102/img-logo---595x422px.jpg'},
+        { url: 'https://storage.googleapis.com/prg-loyalty.appspot.com/media/102/img-logo---595x422px.jpg' },
 
       ],
       activeSlide: 0,
@@ -368,19 +370,20 @@ export default defineComponent({
 </script>
 
 <style>
-
 .active-image {
   transform: scale(1.7);
   z-index: 1;
   border-radius: 0.5rem !important;
 }
 
-.carousel__prev{
-    color: #636062;
+.carousel__prev {
+  color: #636062;
 }
-.carousel__next{
-    color: #E82770;
+
+.carousel__next {
+  color: #E82770;
 }
+
 .carousel-image {
   margin: auto;
   width: 85%;
@@ -388,6 +391,7 @@ export default defineComponent({
   object-fit: cover;
   border-radius: 0.5rem !important;
 }
+
 .carousel__slide--sliding {
   transition: 0.5s;
 }
@@ -400,28 +404,28 @@ export default defineComponent({
 
 .carousel__pagination-button::before,
 .carousel__pagination-button::after {
- content: none;
+  content: none;
 }
 
 .carousel__pagination-button {
- width: 12px; 
- height: 12px;
- border-radius: 50%;
- background-color: #ccc;
- border: none; 
- padding: 0;
- margin: 0 5px; 
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  border: none;
+  padding: 0;
+  margin: 0 5px;
 }
 
 .carousel__pagination-button--active {
- background-color: blue;
+  background-color: blue;
 }
 
 .carousel__icon:hover {
- color: #e82770; 
-}
-.carousel__icon.isActive {
- color: #e82770;
+  color: #e82770;
 }
 
+.carousel__icon.isActive {
+  color: #e82770;
+}
 </style>
