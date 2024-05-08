@@ -48,8 +48,8 @@
                 </ul>
             </div>
 
-            <button @click="toggleMenu" class="block   sm:hidden text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800">
-                    <svg class="h-6 w-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <button @click="toggleMenu" class="block    sm:hidden  focus:outline-none">
+                    <svg class="h-10 w-10 rounded-3xl p-2  bg-[#e82770] text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
 
     </button>
             <div class=" sm:flex-row  mt-8 w-auto md:order-1">

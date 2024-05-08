@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-screen-2xl mx-auto rounded-2xl bg-orange-50 mb-10 mt-10">
+    <div class="max-w-screen-2xl mx-auto rounded-2xl bg-orange-50 mb-10">
     <div class="py-5 flex flex-row mx-auto justify-around" style="width: 80%;">
         <div class="flex flex-row basis-1/2" >
             <img src="/assets/logo.png" class="h-36 relative left-12 top-14" alt="Happy box logo">

@@ -5,37 +5,37 @@
     </nav>
 
 
-    <figure class="relative max-w-screen-2xl mx-auto top-10 ">
+    <figure class="relative max-w-screen-2xl mx-auto md:top-10 ">
 
-      <img class="rounded-3xl" src="/assets/indexImage.jpg" alt="image description">
-      <figcaption class="absolute flex flex-col space-y-10 top-20 align-middle justify-center text-white right-10"
-        style="width: 40%;">
-        <h1 class="text-5xl leading-12 font-semibold w-1/2">Entra nel club di Prénatal</h1>
-        <p class="font-thin w-3/4  text-xl leading-tight ">Registrati gratuitamente per un mondo di promozioni dedicate,
+      <img class="rounded-3xl md:w-full md:h-auto h-[55vh]  w-[90%] mx-auto md:object-cover object-cover filter brightness-50 md:fill-none md:brightness-100" src="/assets/indexImage.jpg" alt="image description" style="object-position: 32% 50%;">
+      <figcaption class="absolute self-center flex flex-col md:space-y-10 md:w-[40%] top-20 align-middle  justify-center text-white md:right-10">
+        <h1 class="md:text-5xl text-4xl md:px-0 px-20 self-center md:self-start md:text-left text-center md:leading-12 leading-10 tracking-tight font-semibold  md:w-1/2">Entra nel club di Prénatal</h1>
+        <p class="font-thin md:w-3/4 md:p-0 p-10 md:text-left  text-center  md:text-xl leading-tight ">Registrati gratuitamente per un mondo di promozioni dedicate,
           o acquista una VIP Card per accedere a tutti i vantaggi aggiuntivi.</p>
-        <a href="#" class="px-3 py-2 w-2/5 rounded-3xl text-center text-white text-xl bg-[#e82770]" type="button">ACCEDI
+        <a href="#" class="md:px-3 md:py-2 md:w-2/5 w-[70%] rounded-3xl self-center md:self-start text-center text-white text-xl md:mb-0 mb-16 sm:mt-0 mt-4 py-3 bg-[#e82770]" type="button">ACCEDI
           O REGISTRATI</a>
-        <h5>Hai perso la tua card? <a href="#" class="underline">Recupera il codice</a></h5>
+        <h5 class="md:text-left text-center">Hai perso la tua card? <a href="#" class="underline">Recupera il codice</a></h5>
       </figcaption>
 
     </figure>
 
 
-    <div class="max-w-screen-2xl mx-auto">
-      <div class="flex flex-row justify-evenly mt-12 px-24 pt-20 pb-10">
+    <div class="sm:max-w-screen-2xl w-full mx-auto">
+      <div class="flex sm:flex-row flex-col justify-evenly sm:mt-12 sm:px-24 sm:pt-20 sm:pb-10 px-5">
         <div class="max-w-sm bg-white p-5 flex flex-col justify-start mt-7 items-center">
           <div class="">
-            <h1 class="mb-2 text-4xl font-bold tracking-tight text-[#e82770]" style="color: #e82770;">I vantaggi di
+            <h1 class="mb-2 sm:text-4xl text-2xl w-2/3 sm:w-full font-semibold sm:font-bold tracking-tight text-[#e82770]" style="color: #e82770;">I vantaggi di
               entrare nel Club</h1>
-            <p class="mb-3 font-normal font-serif text-lg">Registrati subito per vivere una esperienza di acquisto
+            <p class="mb-3 font-normal font-serif leading-5 sm:leading-6 sm:text-lg">Registrati subito per vivere una esperienza di acquisto
               sempre
               piú personalizzata e in linea con le tue esigenze.</p>
           </div>
-          <div class="inline-block relative mt-10">
-            <img class="rounded-xl drop-shadow-xl -rotate-12 scale-75 -skew-y-6" src="/assets/normal-card.png"
+          <div class="sm:inline-block inline-flex gap-2 relative sm:top-24 sm:ml-20">
+            <img class="rounded-xl sm:absolute drop-shadow-xl w-40 h-auto sm:w-[90%] sm:z-10 sm:rotate-12 sm:skew-y-6 top-24 sm:-translate-x-20"
+              src="/assets/clubCard.png" alt="Prenatal vip club" />
+            <img class="rounded-xl drop-shadow-xl w-40 h-auto sm:w-[90%] sm:-translate-y-3 sm:z-0 sm:-rotate-12  sm:-skew-y-6" src="/assets/pcard.png"
               alt="Prenatal card" />
-            <img class="rounded-xl drop-shadow-xl  rotate-12 skew-y-6 scale-75 absolute top-16 right-20"
-              src="/assets/vip-card.png" alt="Prenatal vip club" />
+            
           </div>
         </div>
 
@@ -256,26 +256,27 @@
 
     </div>
 
-    <VipReasones />
+    <VipReasones/>
 
 
+    
 
 
-    <figure class=" relative max-w-screen-2xl mx-auto right-0 place-self-center grid mb-10 mt-20">
-      <img src="assets\download.jpg" alt="image" class="rounded-3xl">
+    <figure class=" relative sm:max-w-screen-2xl mx-auto  grid  sm:mt-20">
+      <img src="assets\p1.jpg" alt="image" class="sm:w-full sm:object-cover sm:object-left object-cover w-[90%] h-[75vh] mx-auto filter opacity-80  sm:h-[45%] rounded-3xl" style="object-position: 25% 50%;">
       <figcaption
-        class="absolute px-4 grid grid-col gap-5 text-lg font-normal font-serif w-2/5 translate-y-16 right-60 p-6">
-        <h1 class=" text-4xl font-bold  text-[#e82770]">Parental Skills at Work</h1>
-        <p class="tracking-tight font-medium text-xl leading-5">Se sei un cliente VIP, accedi gratuitamente al webinar
+        class="absolute sm:self-start self-end sm:py-0 py-10 sm:px-4 px-10 grid grid-col gap-5 text-lg font-normal font-serif sm:w-2/5 sm:top-20 sm:overflow-hidden  sm:right-60">
+        <h1 class="sm:text-4xl text-2xl font-bold  text-[#e82770]">Parental Skills at Work</h1>
+        <p class="sm:tracking-tight tracking-tighter sm:font-medium font-normal sm:text-xl text-[17px] leading-6 sm:leading-5">Se sei un cliente VIP, accedi gratuitamente al webinar
           legato alla genitorialità.
           Un percorso preparato per te con partners autorevoli per riscoprire come le skills genitoriali possono
           dare una marcia in più in famiglia e nella professione.</p>
-        <a class="bg-[#e82770] font-xl w-1/3 text-center px-5 py-3 rounded-full text-white">ACCEDI SUBITO
+        <a class="bg-[#e82770] font-xl sm:w-1/3 w-2/3 text-center px-5 py-3 rounded-full text-white">ACCEDI SUBITO
         </a>
       </figcaption>
       <div
-        class="flex flex-col justify-center text-center -translate-x-12 -translate-y-16 bg-white rounded-full absolute w-60 h-60 text-sm">
-        <span class="translate-x-24 translate-y-6 content-center"> <svg xmlns="http://www.w3.org/2000/svg"
+        class="flex flex-col justify-center text-center -translate-x-12 -translate-y-16 bg-white rounded-full absolute w-48 h-48 text-sm">
+        <span class="translate-x-20 translate-y-6 content-center"> <svg xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="48" viewBox="0 0 57 48">
             <defs>
               <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 82 70">
@@ -285,40 +286,39 @@
             </defs>
             <rect id="logo_parental_skills_at_work_compact" width="57" height="48" fill="url(#pattern)" />
           </svg></span>
-        <h2 class="text-gray-600 text-lg  font-semibold translate-y-7">parental</h2>
-        <h3 class=" translate-y-6 font-light">skills at work</h3>
+        <h2 class="text-gray-600 text-lg  font-semibold translate-y-7 translate-x-4">parental</h2>
+        <h3 class=" translate-y-6 font-light text-xs translate-x-4">skills at work</h3>
       </div>
     </figure>
 
 
 
-    <happyBox />
+    <happyBox class="sm:-mt-96 mt-10"/>
 
 
-    <div class="relative max-w-screen-2xl mx-auto pt-8 px-4">
-      <h1 class=" text-[#E72B6F] text-3xl text-start font-bold ">Altri vantaggi esclusivi</h1>
-      <div class="flex flex-row justify-between ">
-        <p class="translate-y-4 text-lg from-neutral-700">Scopri le offerte attive in questo momento con i nostri
+    <div class="relative max-w-screen-2xl mx-auto sm:pt-8 sm:px-4 px-6">
+      <h1 class=" text-[#E72B6F] sm:text-3xl text-2xl text-center sm:text-start font-bold ">Altri vantaggi esclusivi</h1>
+      <div class="flex sm:flex-row flex-col justify-between sm:gap-0 gap-5 ">
+        <p class="translate-y-4 text-lg from-neutral-700 text-center">Scopri le offerte attive in questo momento con i nostri
           partner selezionati, tutte riservate ai soli clienti registrati</p>
         <a href="#" type="button"
-          class=" text-[#E72B6F] text-xl border-2 text-right right-24  border-[#E72B6F] py-3 px-5 rounded-full font-medium">SCOPRI
+          class=" text-[#E72B6F] text-xl border-2 sm:text-right sm:right-24 text-center border-[#E72B6F] py-3 sm:px-5 rounded-full font-medium">SCOPRI
           DI PIÙ</a>
       </div>
     </div>
 
-    <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="5" @after-change="updateActiveSlide"
-      v-model="activeSlide" class="max-w-screen-2xl mx-auto mt-10 mb-20">
+    <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="itemsToShow"  @after-change="updateActiveSlide"
+      v-model="activeSlide" class="sm:max-w-screen-2xl max-w-screen-xl sm:mx-auto mx-auto mt-10 mb-20">
       <Slide v-for="(image, index) in images" :key="index">
-        <img :src="image.url" class="carousel-image rounded-2xl" :class="{ 'active-image': index === activeSlide }"
-          alt="Carousel image" />
+        <img :src="image.url" class="carousel-image mx-auto sm:w-[85%] sm:h-[65%] sm:object-cover object-cover overflow-hidden w-[85%] h-[50%] rounded-2xl" :class="{ 'active-image': index === activeSlide }"
+          alt="Carousel image">
       </Slide>
 
       <template #addons>
-        <Navigation />
+        <Navigation class="sm:block hidden"/>
         <Pagination />
       </template>
     </Carousel>
-
 
 
     <div class="bg-[#f2d5d6] text-center p-5">
@@ -335,10 +335,10 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
-import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
+import { defineComponent, onMounted, onBeforeUnmount } from 'vue';
+import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel';
 
-import 'vue3-carousel/dist/carousel.css'
+import 'vue3-carousel/dist/carousel.css';
 
 export default defineComponent({
   name: 'MyCarousel',
@@ -356,17 +356,32 @@ export default defineComponent({
         { url: 'https://www.bitrefill.com/primg/w350h212/lastminute_com-belgium-holiday-flight-_-hotel-packages-belgium.webp' },
         { url: 'https://storage.googleapis.com/prg-loyalty.appspot.com/media/93/CLINIQUE_IMMAGINE-ANTEPRIMA.png' },
         { url: 'https://storage.googleapis.com/prg-loyalty.appspot.com/media/102/img-logo---595x422px.jpg' },
-
       ],
       activeSlide: 0,
+      itemsToShow: 5, 
     };
   },
   methods: {
     updateActiveSlide(index) {
       this.activeSlide = index;
     },
-  }
-})
+    updateItemsToShow() {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 640) { 
+        this.itemsToShow = 1.3; 
+      } else {
+        this.itemsToShow = 5; 
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('resize', this.updateItemsToShow);
+    this.updateItemsToShow(); 
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.updateItemsToShow);
+  },
+});
 </script>
 
 <style>
@@ -375,6 +390,11 @@ export default defineComponent({
   z-index: 1;
   border-radius: 0.5rem !important;
 }
+
+.active-image::before{
+  content: none;
+}
+
 
 .carousel__prev {
   color: #636062;
@@ -385,10 +405,6 @@ export default defineComponent({
 }
 
 .carousel-image {
-  margin: auto;
-  width: 85%;
-  height: 65%;
-  object-fit: cover;
   border-radius: 0.5rem !important;
 }
 
@@ -428,4 +444,6 @@ export default defineComponent({
 .carousel__icon.isActive {
   color: #e82770;
 }
+
+
 </style>
