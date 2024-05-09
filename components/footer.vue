@@ -1,6 +1,6 @@
 <template>
    <footer class="bottom-0 bg-[#e82770]">
-    <div class="mx-auto flex flex-row justify-between py-5 px-36 sm:w-full">
+    <div class="mx-auto flex sm:flex-row sm:gap-0 gap-4 flex-col justify-between text-center py-5 sm:px-36 sm:w-full">
       <div>
         <a class="inline-block rounded-3xl bg-[#e82770] px-6 py-5" href="#" title="Prénatal">
                 <span class="sr-only">Prénatal</span>
@@ -21,17 +21,17 @@
           <svg class="h-4 mt-1"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  <path d="M14.5 9a3.5 4 0 1 0 0 6" /></svg>
           <p>2023 Prènatal S.p.A - PIV.A 00857680151</p>
         </div>
-        <div class="flex justify-center gap-2 underline ">
+        <div class="flex sm:flex-row flex-col justify-center text-center sm:gap-2 underline ">
             <a href="#">Assistenza</a>
             <a href="#">Store online</a>
         </div>
-        <div class=" flex flex-row justify-center underline gap-3">
+        <div class=" flex sm:flex-row flex-col text-center justify-center underline sm:gap-3">
             <a href="#">Informativa Privacy </a>
             <a href="#">Cookie Policy </a>
             <a href="#">Terms & Conditions </a>
         </div>
       </div>
-      <div class="text-white flex flex-row justify-around align-middle">
+      <div class="text-white flex flex-row sm:gap-3 justify-around sm:px-0 px-32 translate-y-[30%]">
         <svg class="h-8 w-8  "  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" /></svg>        
         <svg class="h-8 w-8"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" /></svg>
         <svg class="h-8 w-8 "  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="4" width="16" height="16" rx="4" />  <circle cx="12" cy="12" r="3" />  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" /></svg>
