@@ -1,12 +1,13 @@
 <template>
-    <nav>
-        <div class="max-w-screen-2xl flex flex-row mx-auto p-4 justify-between">
+    <nav class="lg:w-[65%] md:w-[90%] w-[90%] mx-auto" >
+        <div class=" flex flex-row justify-between">
             <div class="flex flex-wrap ">
-                <ul class="flex p-4  mt-4 rounded-lg space-x-3  flex-row justify-between sm:mt-0">
+                <ul class="flex py-4  mt-4 space-x-3  flex-row justify-between sm:mt-0">
                     <li>
-                        <a class="inline-block logo bg-[#e82770] px-3 py-3" href="#" title="Prénatal">
-                            <svg viewBox="0 0 410 79" data-logo-icon="data-logo-icon" class="block h-6 w-auto sm:h-10"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a class="inline-block logo bg-[#e82770] px-3 py-2" href="#" title="Prénatal">
+                            <svg viewBox="0 0 410 79" data-logo-icon="data-logo-icon"
+                                class="block h-6 w-auto sm:h-6 md:h-6 lg:h-7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M18.1846 39.8723H29.3629C32.0968 39.8723 33.8497 39.2109 35.0347 38.0148C36.1426 36.8904 36.8261 35.3525 36.8261 33.6548C36.8261 28.9862 31.4354 26.616 29.5228 28.5287C31.4354 26.616 29.0653 21.2363 24.4021 21.2363C22.7044 21.2363 21.1611 21.9198 20.0366 23.0277C18.835 24.2183 18.1736 25.9656 18.1736 28.6996V39.8778L18.1846 39.8723Z"
                                     fill="white"></path>
@@ -41,22 +42,29 @@
                     </li>
                     <li>
                         <a href="#"
-                            class="block text-lg leading-6 space-x-3 sm:pt-3 sm:text-3xl font-sans font-semibold   text-[#e82770]"
+                            class="block text-lg leading-6 space-x-3 lg:pt-3 lg:text-2xl sm:w-1/6 lg:w-full font-sans font-semibold   text-[#e82770]"
                             aria-current="page">Carta Fedeltà</a>
                     </li>
 
                 </ul>
             </div>
 
-            <button @click="toggleMenu" class="block    sm:hidden  focus:outline-none">
-                    <svg class="h-10 w-10 rounded-3xl p-2  bg-[#e82770] text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            <button @click="toggleMenu" class="block    lg:hidden  focus:outline-none right-0">
+                <svg class="h-12 w-12 rounded-3xl p-2  bg-[#e82770] text-white" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
 
-    </button>
+            </button>
+
             <div class=" sm:flex-row  mt-8 w-auto md:order-1">
-             
-                <ul :class="menuOpen ? 'block' : 'hidden'" class="sm:flex flex-col font-medium p-4 md:p-0 sm:space-x-5 sm:flex-row  w-full ">
+
+                <ul :class="menuOpen ? 'block' : 'hidden'"
+                    class="lg:flex flex-col font-medium p-4 lg:p-0 sm:space-x-5 lg:flex-row  w-full ">
                     <li>
-                        <a href="#" class="flex flex-row md:space-x-3 text-[#e82770] rounded font-semibold text-sm sm:text-xl pt-4"
+                        <a href="#"
+                            class="flex flex-row md:space-x-3 text-[#e82770] rounded font-semibold text-sm lg:text-lg pt-2"
                             aria-current="page">
                             <svg class="h-7 pt-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round">
@@ -69,14 +77,14 @@
                     </li>
                     <li>
                         <button type="button"
-                            class="bg-[#e82770] text-white hover:bg-pink-60 focus:ring-4 focus:outline-none focus:ring-pink-500 font-sans sm:text-2xl text-sm font-normal px-4 py-1 sm:px-8 sm:py-3 logo text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">ACCEDI
+                            class="bg-[#e82770] text-white hover:bg-pink-60 focus:ring-4 focus:outline-none focus:ring-pink-500 font-sans lg:text-lg text-sm font-normal px-5 py-2 logo text-center dark:bg-pink-600 dark:hover:bg-pink-700 dark:focus:ring-pink-800">ACCEDI
                             O REGISTRATI</button>
                     </li>
                 </ul>
             </div>
 
         </div>
-            
+
 
     </nav>
 
@@ -84,7 +92,7 @@
 
 <style>
 .logo {
-    border-radius: 1.7rem;
+    border-radius: 1.3rem;
 }
 
 #menuToggle {
@@ -102,15 +110,15 @@
 </style>
 <script>
 export default {
-  data() {
-    return {
-      menuOpen: false 
-    };
-  },
-  methods: {
-    toggleMenu() {
-      this.menuOpen = !this.menuOpen; 
+    data() {
+        return {
+            menuOpen: false
+        };
+    },
+    methods: {
+        toggleMenu() {
+            this.menuOpen = !this.menuOpen;
+        }
     }
-  }
 };
 </script>

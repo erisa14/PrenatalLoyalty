@@ -1,341 +1,111 @@
 <template>
-  <div>
+  <div class="mx-auto">
     <nav>
       <Navbar></Navbar>
     </nav>
 
 
-    <figure class="relative max-w-screen-2xl mx-auto md:top-10 ">
+    <figure class="relative mx-auto top-5 ">
 
-      <img class="rounded-3xl md:w-full md:h-auto h-[55vh]  w-[90%] mx-auto md:object-cover object-cover filter brightness-50 md:fill-none md:brightness-100" src="/assets/indexImage.jpg" alt="image description" style="object-position: 32% 50%;">
-      <figcaption class="absolute self-center flex flex-col md:space-y-10 md:w-[40%] top-20 align-middle  justify-center text-white md:right-10">
-        <h1 class="md:text-5xl text-4xl md:px-0 px-20 self-center md:self-start md:text-left text-center md:leading-12 leading-10 tracking-tight font-semibold  md:w-1/2">Entra nel club di Prénatal</h1>
-        <p class="font-thin md:w-3/4 md:p-0 p-10 md:text-left  text-center  md:text-xl leading-tight ">Registrati gratuitamente per un mondo di promozioni dedicate,
+      <img class="rounded-3xl lg:w-[65%] md:w-[90%] w-[90%] md:h-auto h-[53vh] mx-auto md:object-cover object-cover filter brightness-50 md:fill-none md:brightness-100" src="/assets/indexImage.jpg" alt="image description" style="object-position: 32% 50%;">
+      <figcaption class="absolute self-center flex flex-col lg:space-y-5 lg:w-[43%]  lg:right-10 lg:top-14  md:w-[45%] md:right-0 md:top-12 top-14 w-[90%] space-y-4  align-middle  justify-center text-white">
+        <h1 class="lg:text-5xl lg:w-2/5 lg:self-start lg:text-left md:text-xl md:w-4/5 md:self-start md:text-left w-[55%] text-4xl self-center text-center  font-semibold">Entra nel club di Prénatal</h1>
+        <p class="lg:w-2/4 lg:text-left lg:self-start lg:text-lg lg:tracking-tight lg:leading-5 md:text-left md:self-start md:tracking-tight md:w-[88%] md:text-sm md:leading-4 w-[85%] tracking-tight justify-center self-center leading-5">Registrati gratuitamente per un mondo di promozioni dedicate,
           o acquista una VIP Card per accedere a tutti i vantaggi aggiuntivi.</p>
-        <a href="#" class="md:px-3 md:py-2 md:w-2/5 w-[70%] rounded-3xl self-center md:self-start text-center text-white text-xl md:mb-0 mb-16 sm:mt-0 mt-4 py-3 bg-[#e82770]" type="button">ACCEDI
+        <a href="#" class="lg:self-start lg:py-2 lg:text-lg  md:px-4 md:py-2 md:text-base md:mt-3 md:self-start md:mb-2 px-6 py-2 rounded-3xl self-center text-white bg-[#e82770]" type="button">ACCEDI
           O REGISTRATI</a>
-        <h5 class="md:text-left text-center">Hai perso la tua card? <a href="#" class="underline">Recupera il codice</a></h5>
+        <h5 class="lg:text-left lg:text-sm md:text-left md:text-xs text-xs text-center top-4">Hai perso la tua card? <a href="#" class="underline">Recupera il codice</a></h5>
       </figcaption>
 
     </figure>
 
-    <swiper
-    :modules="modules"
-    :loop="true"
-        :slides-per-view="1"
-        :space-between="10"
-        @slideChange="onSlideChange"
-        @swiper="onSwiper"
-        :draggable="true"
-        :pagination="{
-      clickable: true,
-      
-    }"
- 
-    
-     
-  >
-    <swiper-slide>   <div class="w-full max-w-sm rounded-xl text-center ">
-          <h1 class="bg-[#e82770] text-2xl font-sans font-semibold text-white text-center p-7 rounded-t-3xl">Prénatal
-            Card
-          </h1>
-          <div class="flow-root p-5 text-left shadow bg-[#ffedee] rounded-b-3xl">
-            <ul class="divide-y divide-gray-50 text-lg tracking-wide font-sans font-semibold text-[#e82770]">
-              <li></li>
-              <li class="flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>
-                Sarai informato in anteprima sulle promozioni
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Promozioni personalizzate per te
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Sconto di benvenuto
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Sconto speciale in occasione del compleanno di tuo figlio/a
-              </li>
-              <li class="flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Offerte extra dai nostri brand partner
-              </li>
-              <li></li>
-            </ul>
-            <ul class="divide-y divide-gray-50 text-lg tracking-wide font-sans font-light" style="color: #909090;">
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg></span>Sconti a partire dal -30%
-              </li>
-              <li class=" flex p-2 items-center ">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg></span>
-                Sconti a partire dal 30% su abbigliamento e arredo letto a marchio Prénatal
-              </li>
-              <li class=" flex p-2 items-center">
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg></span>
-                Sconti a partire dal 10% sui marchi Nike, Adidas, Nike Jordan, Vans, Converse, New Era e Puma
-              </li>
-              <li class=" flex px-3 py-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg></span>Spedizione gratuita per ordini online*
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg></span>
-                Servizio di personal shopper
-              </li>
-
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg></span>
-                Accesso all'esclusivo webinar di genitorialità
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                  </svg></span>
-                Tantissimi vantaggi su una selezione di pannolini
-              </li>
-              <li></li>
-            </ul>
-            <h1 class="text-[#e82770] text-2xl font-sans font-bold text-center px-7 py-10 ">GRATIS</h1>
 
 
-          </div>
-          <div class="flex flex-col gap-7 px-16 -translate-y-1/4">
-            <a href="#" class="button py-3 rounded-3xl top-10 text-white text-lg bg-[#e82770]">REGISTRATI SUBITO</a>
-            <a href="#" class="underline text-gray-500 self-center font-thin">Regolamento Prénatal Card</a>
-          </div>
-        </div></swiper-slide>
-        <swiper-slide> 
-        <div class="w-full max-w-sm rounded-xl">
-          <div
-            class="flex flex-col justify-center text-center bg-[#dddddd] text-black rounded-full w-32 h-32 absolute rotate-12 translate-x-80 -translate-y-6">
-            <h2 class="text-lg">risparmia</h2>
-            <h1 class="text-[#3e5884] text-3xl font-bold">215€</h1>
-            <h3 class="font-light text-xs ">in media <br>ogni anno*</h3>
-          </div>
-          <div class=" font-sans font-semibold text-white  px-7 py-4 rounded-t-3xl bg-[#3e5884]">
-            <h1 class="text-2xl">Prénatal VIP Card</h1>
-            <h5 class="text-[#cddfc5]">12 mesi di sconti esclusivi</h5>
-          </div>
-          <div class="flow-root p-5 text-left shadow text-[#e82770] bg-[#eaf1fd] rounded-b-3xl">
-            <ul class="divide-y divide-gray-50 text-lg tracking-wide font-sans font-semibold">
-              <li></li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>
-                Sarai informato in anteprima sulle promozioni
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Promozioni personalizzate per te
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Sconto di benvenuto
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Sconto speciale in occasione del compleanno di tuo figlio/a
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Offerte extra dai nostri brand partner
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Sconti a partire dal -30%
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Sconti a partire dal 30% su abbigliamento e arredo letto a marchio Prénatal
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Sconti a partire dal 10% sui marchi Nike, Adidas, Nike Jordan, Vans, Converse, New Era e
-                Puma
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Spedizione gratuita per ordini online*
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Servizio di personal shopper
-              </li>
-
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Accesso all'esclusivo webinar di genitorialità
-              </li>
-              <li class=" flex p-2 items-center">
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                  </svg></span>Tantissimi vantaggi su una selezione di pannolini
-              </li>
-              <li></li>
-            </ul>
-            <div class="flex flex-col justify-between gap-3 py-5">
-              <h1 class="text-[#e82770] text-2xl font-sans font-bold text-center  rounded-t-xl">30 €/anno</h1>
-              <a href="#" class="text-center underline text-[#e82770] font-sans text-lg">Scopri tutti i vantaggi della
-                VIP
-                Card</a>
-            </div>
-
-          </div>
-          <div class="flex flex-col gap-7 px-12 -translate-y-1/4">
-            <a href="#" type="button"
-              class="button py-3 rounded-3xl text-center text-white text-lg bg-[#e82770]">ACQUISTA
-              LA TUA VIP CARD</a>
-            <a href="#" class="underline text-gray-500 self-center font-thin">Regolamento VIP Card</a>
-          </div>
-        </div>
-        </swiper-slide>
-    <div class="swiper-pagination " slot="pagination"></div>
-  </swiper>
-
-    <div class="sm:max-w-screen-2xl w-full mx-auto">
-      <div class="flex sm:flex-row  flex-col justify-evenly sm:mt-12  sm:pt-20 sm:pb-10 px-5">
-        <div class="max-w-sm bg-white p-5 flex flex-col justify-start mt-7 items-center">
+    <div class="md:w-[90%] lg:w-[60%] w-[95%] mx-auto">
+      <div class="flex lg:flex-row py-3 flex-col justify-evenly lg:gap-9 md:mt-12  lg:pt-20 lg:pb-10 px-5">
+        <div class="lg:w-[60%] bg-white  flex flex-col justify-start lg:mt-7 items-center w-[98%]">
           <div class="">
-            <h1 class="mb-2 sm:text-4xl text-2xl w-2/3 sm:w-full font-semibold sm:font-bold tracking-tight text-[#e82770]" style="color: #e82770;">I vantaggi di
+            <h1 class="mb-2 lg:text-4xl text-2xl w-[60%] md:w-[30%] lg:w-full font-semibold  tracking-tight text-[#e82770]" style="color: #e82770;">I vantaggi di
               entrare nel Club</h1>
-            <p class="mb-3 font-normal font-serif leading-5 sm:leading-6 sm:text-lg">Registrati subito per vivere una esperienza di acquisto
+            <p class="mb-3 font-thin leading-5 md:leading-6 md:text-lg">Registrati subito per vivere una esperienza di acquisto
               sempre
               piú personalizzata e in linea con le tue esigenze.</p>
           </div>
-          <div class="sm:inline-block inline-flex gap-2 relative sm:top-24 sm:ml-20">
-            <img class="rounded-xl sm:absolute drop-shadow-xl w-40 h-auto sm:w-[90%] sm:z-10 sm:rotate-12 sm:skew-y-6 top-24 sm:-translate-x-20"
+          <div class="lg:inline-block inline-flex gap-2 relative lg:top-24 lg:ml-20 top-3 md:top-0 mb-16">
+            <img class="rounded-xl lg:absolute drop-shadow-xl w-36 h-auto lg:w-[90%] lg:z-10 lg:rotate-12 lg:skew-y-6 top-24 lg:-translate-x-20"
               src="/assets/clubCard.png" alt="Prenatal vip club" />
-            <img class="rounded-xl drop-shadow-xl w-40 h-auto sm:w-[90%] sm:-translate-y-3 sm:z-0 sm:-rotate-12  sm:-skew-y-6" src="/assets/pcard.png"
+            <img class="rounded-xl drop-shadow-xl w-36 h-auto lg:w-[90%] lg:-translate-y-3 sm:z-0 lg:-rotate-12  lg:-skew-y-6" src="/assets/pcard.png"
               alt="Prenatal card" />
             
           </div>
         </div>
 
 
-        <div class="flex flex-row gap-8 justify-evenly">
+        <div class="md:top-0 md:-translate-y-16">
 
           <swiper
     :modules="modules"
     :loop="true"
-        :slides-per-view="1.2"
-        :space-between="10"
+        :slides-per-view="slidesPerView"
         @slideChange="onSlideChange"
         @swiper="onSwiper"
         :draggable="true"
         :pagination="{
       clickable: true,
       
-    }"
- 
-    
-     
+    }"  
   >
-    <swiper-slide> 
-        <div class="w-full max-w-sm rounded-xl text-center ">
-          <h1 class="bg-[#e82770] text-2xl font-sans font-semibold text-white text-center p-7 rounded-t-3xl">Prénatal
+    <swiper-slide>  
+       <div class="w-[97%] lg:w-[98%] rounded-xl text-center mt-6">
+          <h1 class="bg-[#e82770] text-xl lg:text-2xl font-sans font-semibold text-white text-center p-7 rounded-t-3xl">Prénatal
             Card
           </h1>
           <div class="flow-root p-5 text-left shadow bg-[#ffedee] rounded-b-3xl">
-            <ul class="divide-y divide-gray-50 text-lg tracking-wide font-sans font-semibold text-[#e82770]">
+            <ul class="divide-y divide-white text-[15px] md:tracking-wide md:leading-5 lg:text-lg tracking-tight lg:tracking-tight lg:leading-5 font-sans font-semibold text-[#e82770]">
               <li></li>
               <li class="flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>
                 Sarai informato in anteprima sulle promozioni
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Promozioni personalizzate per te
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Sconto di benvenuto
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Sconto speciale in occasione del compleanno di tuo figlio/a
               </li>
               <li class="flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class=" w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Offerte extra dai nostri brand partner
               </li>
               <li></li>
             </ul>
-            <ul class="divide-y divide-gray-50 text-lg tracking-wide font-sans font-light" style="color: #909090;">
+            <ul class="divide-y divide-white text-[15px] md:tracking-wide md:leading-5 lg:text-lg lg:tracking-tight lg:leading-5 tracking-tight font-sans font-light" style="color: #909090;">
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="lg:w-6 lg:h-6 w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg></span>Sconti a partire dal -30%
               </li>
               <li class=" flex p-2 items-center ">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="lg:w-6 lg:h-6 w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg></span>
                 Sconti a partire dal 30% su abbigliamento e arredo letto a marchio Prénatal
@@ -343,20 +113,20 @@
               <li class=" flex p-2 items-center">
                 <span>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="lg:w-6 lg:h-6 w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg></span>
                 Sconti a partire dal 10% sui marchi Nike, Adidas, Nike Jordan, Vans, Converse, New Era e Puma
               </li>
               <li class=" flex px-3 py-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="lg:w-6 lg:h-6 w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg></span>Spedizione gratuita per ordini online*
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="lg:w-6 lg:h-6 w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg></span>
                 Servizio di personal shopper
@@ -364,125 +134,124 @@
 
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="lg:w-6 lg:h-6 w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg></span>
                 Accesso all'esclusivo webinar di genitorialità
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="currentColor" class="lg:w-6 lg:h-6 w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                   </svg></span>
                 Tantissimi vantaggi su una selezione di pannolini
               </li>
               <li></li>
             </ul>
-            <h1 class="text-[#e82770] text-2xl font-sans font-bold text-center px-7 py-10 ">GRATIS</h1>
+            <h1 class="text-[#e82770] text-2xl font-sans lg:font-bold font-semibold text-center px-7 lg:py-10 pt-8 pb-16">GRATIS</h1>
 
 
           </div>
           <div class="flex flex-col gap-7 px-16 -translate-y-1/4">
-            <a href="#" class="button py-3 rounded-3xl top-10 text-white text-lg bg-[#e82770]">REGISTRATI SUBITO</a>
-            <a href="#" class="underline text-gray-500 self-center font-thin">Regolamento Prénatal Card</a>
+            <a href="#" class="button lg:py-3 py-2 rounded-3xl top-10 text-white text-lg bg-[#e82770]">REGISTRATI SUBITO</a>
+            <a href="#" class="underline text-gray-500 self-center lg:text-base text-sm font-thin">Regolamento Prénatal Card</a>
           </div>
-        </div>
-        </swiper-slide>
+        </div></swiper-slide>
         <swiper-slide> 
-        <div class="w-full max-w-sm rounded-xl">
+        <div class="w-[97%] lg:w-[98%] rounded-xl mt-6">
           <div
-            class="flex flex-col justify-center text-center bg-[#dddddd] text-black rounded-full w-32 h-32 absolute rotate-12 translate-x-80 -translate-y-6">
-            <h2 class="text-lg">risparmia</h2>
-            <h1 class="text-[#3e5884] text-3xl font-bold">215€</h1>
-            <h3 class="font-light text-xs ">in media <br>ogni anno*</h3>
+            class=" overflow-auto flex flex-col justify-center text-center lg:p-5 bg-[#dddddd] text-black rounded-full md:w-[120px] md:h-[120px] absolute rotate-12 md:translate-x-72 lg:translate-x-[255px] z-10 lg:-translate-y-3  md:-translate-y-6 translate-x-64  w-[85px] h-[85px]">
+            <h2 class=" text-xs">risparmia</h2>
+            <h1 class="text-[#3e5884] md:text-3xl text-sm leading-4 md:font-semibold lg:font-bold">215€</h1>
+            <h3 class="lg:font-light text-xs  leading-3">in media <br>ogni anno*</h3>
           </div>
-          <div class=" font-sans font-semibold text-white  px-7 py-4 rounded-t-3xl bg-[#3e5884]">
-            <h1 class="text-2xl">Prénatal VIP Card</h1>
-            <h5 class="text-[#cddfc5]">12 mesi di sconti esclusivi</h5>
+          <div class=" font-sans font-semibold text-white px-7 lg:py-4 md:py-4 py-5 rounded-t-3xl bg-[#3e5884]">
+            <h1 class="lg:text-2xl text-lg">Prénatal VIP Card</h1>
+            <h5 class="text-[#cddfc5] lg:text-base text-xs md:text-base">12 mesi di sconti esclusivi</h5>
           </div>
           <div class="flow-root p-5 text-left shadow text-[#e82770] bg-[#eaf1fd] rounded-b-3xl">
-            <ul class="divide-y divide-gray-50 text-lg tracking-wide font-sans font-semibold">
+            <ul class="divide-y divide-white text-[15px] lg:text-lg lg:tracking-tight lg:leading-5  tracking-tight md:tracking-wide md:leading-5 font-sans font-semibold">
               <li></li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>
                 Sarai informato in anteprima sulle promozioni
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Promozioni personalizzate per te
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Sconto di benvenuto
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Sconto speciale in occasione del compleanno di tuo figlio/a
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Offerte extra dai nostri brand partner
               </li>
-              <li class=" flex p-2 items-center">
+              <li class=" flex px-2 py-3 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class=" w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Sconti a partire dal -30%
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Sconti a partire dal 30% su abbigliamento e arredo letto a marchio Prénatal
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Sconti a partire dal 10% sui marchi Nike, Adidas, Nike Jordan, Vans, Converse, New Era e
                 Puma
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Spedizione gratuita per ordini online*
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Servizio di personal shopper
               </li>
 
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class=" w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Accesso all'esclusivo webinar di genitorialità
               </li>
               <li class=" flex p-2 items-center">
                 <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="3 0 24 24" stroke-width="3.5"
-                    stroke="currentColor" class="w-6 h-6">
+                    stroke="#297860" class="w-[18px] h-[18px]">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                   </svg></span>Tantissimi vantaggi su una selezione di pannolini
               </li>
               <li></li>
             </ul>
             <div class="flex flex-col justify-between gap-3 py-5">
-              <h1 class="text-[#e82770] text-2xl font-sans font-bold text-center  rounded-t-xl">30 €/anno</h1>
-              <a href="#" class="text-center underline text-[#e82770] font-sans text-lg">Scopri tutti i vantaggi della
+              <h1 class="text-[#e82770] text-2xl font-sans lg:font-bold font-semibold text-center  rounded-t-xl">30 €/anno</h1>
+              <a href="#" class="text-center underline text-[#e82770] font-sans lg:text-lg text-base">Scopri tutti i vantaggi della
                 VIP
                 Card</a>
             </div>
@@ -490,26 +259,24 @@
           </div>
           <div class="flex flex-col gap-7 px-12 -translate-y-1/4">
             <a href="#" type="button"
-              class="button py-3 rounded-3xl text-center text-white text-lg bg-[#e82770]">ACQUISTA
+              class="button lg:py-3 py-2 px-2 rounded-3xl text-center text-white lg:text-lg  bg-[#e82770]">ACQUISTA
               LA TUA VIP CARD</a>
-            <a href="#" class="underline text-gray-500 self-center font-thin">Regolamento VIP Card</a>
+            <a href="#" class="underline text-gray-500 self-center lg:text-base text-sm font-thin">Regolamento VIP Card</a>
           </div>
         </div>
         </swiper-slide>
-        <div class="swiper-pagination " slot="pagination"></div>
+    <div class="swiper-pagination " slot="pagination"></div>
+  </swiper>
 
-        </swiper>
         </div>
       </div>
-      <h5 class="text-right text-sm px-20 pb-5 font-semibold">*Sconto medio ottenuto dai clienti con VIP Card nel 2023
+      <h5 class="hidden lg:block text-right text-sm pb-5 font-light ">*Sconto medio ottenuto dai clienti con VIP Card nel 2023
       </h5>
 
     </div>
 
     <VipReasones/>
 
-
-    
 
 
     <figure class=" relative sm:max-w-screen-2xl mx-auto  grid  sm:mt-20">
@@ -623,6 +390,7 @@ export default defineComponent({
       ],
       activeSlide: 0,
       itemsToShow: 5, 
+      slidesPerView:2,
     };
   },
   methods: {
@@ -631,19 +399,33 @@ export default defineComponent({
     },
     updateItemsToShow() {
       const screenWidth = window.innerWidth;
-      if (screenWidth <= 640) { 
-        this.itemsToShow = 1.3; 
+      if (screenWidth <= 840) { 
+        this.itemsToShow = 1.2; 
       } else {
         this.itemsToShow = 5; 
       }
+    },
+
+    updateSlide(){
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 640) { 
+        this.slidesPerView = 1.2; 
+      } else {
+        this.slidesPerView = 2; 
+      }
+      
     },
   },
   mounted() {
     window.addEventListener('resize', this.updateItemsToShow);
     this.updateItemsToShow(); 
+    this.updateSlide();
+    window.addEventListener('resize', this.updateSlide);
   },
   beforeUnmount() {
     window.removeEventListener('resize', this.updateItemsToShow);
+    window.removeEventListener('resize', this.updateSlide);
+
   },
 });
 </script>
@@ -653,7 +435,7 @@ export default defineComponent({
 @import 'swiper/swiper-bundle.css';
 
 .swiper-pagination-bullet-active {
-  background: blue; /* Change color as needed */
+  background: blue; 
 }
 .active-image {
   transform: scale(1.7);
@@ -743,6 +525,5 @@ export default defineComponent({
 .carousel__icon.isActive {
   color: #e82770;
 }
-
 
 </style>
