@@ -1,5 +1,5 @@
 <template>
-    <nav class="lg:w-[65%] md:w-[90%] w-[90%] mx-auto" >
+    <nav class="lg:w-[65%] md:w-[80%] w-[90%] mx-auto" >
         <div class=" flex flex-row justify-between">
             <div class="flex flex-wrap ">
                 <ul class="flex py-4  mt-4 space-x-3  flex-row justify-between sm:mt-0">
@@ -84,8 +84,6 @@
             </div>
 
         </div>
-
-
     </nav>
 
 </template>
