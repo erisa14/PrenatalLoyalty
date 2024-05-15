@@ -1,30 +1,24 @@
 <template>
-
     <nav>
         <Navbar />
     </nav>
-
-    <div class="max-w-screen-2xl mx-auto flex mt-16">
+    <div class="max-w-screen-xl mx-auto md:flex mt-16 gap-6">
         <LeftNav />
-
-        <div class=" w-3/4 mx-auto mb-10 mt-16 flex flex-col gap-5">
-            <figure class="relative -translate-y-16">
-
-                <img class="rounded-3xl relative sm:w-full md:h-[600px] opacity-85" src="/assets/invita.png"
+        <div class=" lg:w-3/4 w-full mx-auto mb-10 mt-16 flex flex-col gap-5">
+            <figure class="relative -translate-y-16 m-4">
+                <img class="rounded-3xl relative sm:w-full md:h-[600px] h-[400px] opacity-80" src="/assets/invita.png"
                     alt="image description">
-                <figcaption class="absolute flex flex-col space-y-5 top-24 w-[46%] transform translate-x-[97%]">
-                    <h1 class="text-[44px] leading-10 font-medium float-right text-[#e82770]">Invita un amico ad unirsi
+                <figcaption class="absolute flex flex-col space-y-5 top-24  lg:w-[46%] transform lg:translate-x-[97%]">
+                    <h1 class="lg:text-[34px] text-xl lg:leading-10 font-medium w-[65%] float-right text-[#E82770]">Invita un amico ad unirsi
                         al
                         nostro Fidelity Club</h1>
-                    <p class="text-2xl leading-7 tracking-tight w-[90%]">Per ogni amico che sottoscrive la nostra Carta
+                    <p class="md:text-xl text-lg leading-4 tracking-tighter w-[80%] lg:w-[90%]">Per ogni amico che sottoscrive la nostra Carta
                         Fedeltà per te uno sconto speciale di 10euro. Puoi farlo condividendo il link sottostante con
                         lui/lei.</p>
-
-
                     <div class="flex flex-row p-1">
                         <input type="text" :value="link" readonly
                             class=" border-2 border-r-0 px-8 py-3 rounded-l-md font-light text-lg w-full text-gray-500">
-                        <button @click="copyLink" class="bg-[#e82770] p-3 rounded-r-md"><svg class="h-6 w-6 text-white"
+                        <button @click="copyLink" class="bg-[#E82770] hidden md:flex p-3 rounded-r-md"><svg class="h-6 w-6 text-white"
                                 width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
                                 fill="none" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke="none" d="M0 0h24v24H0z" />
@@ -33,24 +27,19 @@
                             </svg>
                         </button>
                     </div>
-
-                    <div class="bg-[#e82770] text-white flex flex-row gap-2 w-1/3 rounded-3xl mt-8 py-1 px-6 ">
-                        <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32"
-                            height="32" fill="none" viewBox="0 0 21 21">
+                    <div class="bg-[#E82770] text-white flex flex-row gap-2 lg:w-2/4 w-3/5 rounded-3xl mt-8 py-1 px-6 ">
+                        <svg class="md:w-10 w-6 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
                             <path stroke="white" stroke-linecap="round" stroke-width="2"
                                 d="M7.926 10.898 15 7.727m-7.074 5.39L15 16.29M8 12a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm12 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm0-11a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
                         </svg>
-
-                        <button @click="shareLink" class="w-35% text-xl mx-auto">CONDIVIDI</button>
+                        <button @click="shareLink" class="md:w-72 text-xl mx-auto">CONDIVIDI</button>
                     </div>
                 </figcaption>
             </figure>
-
-
-            <div class="flex flex-col gap-7">
-                <h1 class="text-4xl font-bold text-[#e82770]">Come funziona?</h1>
-                <div class="flex gap-8">
-                    <div class="bg-[#e82770] rounded-full sm:w-24 sm:h-24 flex justify-center items-center">
+            <div class="flex flex-col gap-4 lg:translate-y-0 translate-y-16 w-fit m-4 lg:w-full">
+                <h1 class="md:text-4xl text-2xl font-bold text-[#E82770] ">Come funziona?</h1>
+                <div class="flex gap-4">
+                    <div class="bg-[#E82770] rounded-full lg:w-24 lg:h-24 w-16 h-16 flex justify-center items-center">
                         <svg width="92px" height="92px" viewBox="0 0 48 48" class="translate-x-2" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -74,15 +63,13 @@
                             </g>
                         </svg>
                     </div>
-                    <h3 class="sm:w-[90%] text-2xl">Invita un amico a sottoscrivere la nostra carta Fedeltà per entrare
+                    <h3 class="w-[90%] lg:text-2xl text-xl">Invita un amico a sottoscrivere la nostra carta Fedeltà per entrare
                         in un mondo di vantaggi, promozioni speciali e sconti dedicati, validi in tutti i nostri negozi
                         e online</h3>
                 </div>
-
-                <div class="flex gap-8">
-
-                    <div class="bg-[#e82770] rounded-full sm:w-24 sm:h-24 flex justify-center items-center">
-                        <svg width="132px" height="62px" viewBox="-1 0 26 26" version="1.1"
+                <div class="flex gap-4">
+                    <div class="bg-[#E82770] rounded-full  lg:w-24 lg:h-24 w-16 h-16 flex justify-center items-center">
+                        <svg class="lg:w-[132px] w-[120px] lg:h-[62px] h-[32px]"  viewBox="-1 0 26 26" version="1.1"
                             xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                             xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -102,100 +89,94 @@
                             </g>
                         </svg>
                     </div>
-                    <h3 class="sm:w-[90%] text-2xl">Condividi il tuo link personale con chi vuoi. Puoi mandarlo via
+                    <h3 class="sm:w-[90%] lg:text-2xl text-xl">Condividi il tuo link personale con chi vuoi. Puoi mandarlo via
                         Whatsapp, Facebook o via email, come preferisci!</h3>
                 </div>
-                <div class="flex gap-8">
-                    <div class="bg-[#e82770] rounded-full sm:w-24 sm:h-24 flex justify-center items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="" viewBox="0 0 16 16">
+                <div class="flex gap-4">
+                    <div class="bg-[#E82770] rounded-full  lg:w-24 lg:h-24 w-16 h-16 flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="lg:w-[50px] w-[70px] lg:h-[50px] h-[30px]" width="50" height="50"  viewBox="0 0 16 16">
                             <path fill="white" fill-rule="evenodd"
                                 d="M6.427.512A1.75 1.75 0 0 1 7.664 0H13v3h3v5.335c0 .465-.185.91-.513 1.239L9.573 15.48a1.75 1.75 0 0 1-2.473 0l-2.293-2.293l-1.293-1.293l-3-3a1.75 1.75 0 0 1 0-2.475L6.428.512ZM11.5 1.5V3h-.836a1.75 1.75 0 0 0-1.237.512L3.514 9.419q-.09.09-.165.19L1.574 7.833a.25.25 0 0 1 0-.353l5.913-5.907a.25.25 0 0 1 .177-.073zM5.866 12.126l-1.292-1.293a.25.25 0 0 1 0-.353l5.913-5.907a.25.25 0 0 1 .177-.073H14.5v3.835a.25.25 0 0 1-.073.177L8.513 14.42a.25.25 0 0 1-.353 0zM12 8a1 1 0 1 0 0-2a1 1 0 0 0 0 2"
                                 clip-rule="evenodd" />
                         </svg>
                     </div>
-                    <h3 class="sm:w-[90%] text-2xl">Quando il tuo amico avrà terminato la registrazione utilizzando il
+                    <h3 class="sm:w-[90%] lg:text-2xl text-xl">Quando il tuo amico avrà terminato la registrazione utilizzando il
                         tuo link, entrambi riceverete uno sconto subito valido per il vostro prossimo acquisto: per te
                         uno sconto di 10€, per il tuo amico uno sconto di 15€!</h3>
                 </div>
-
-
             </div>
-
-            <div class="bg-[#f7f7f7] flex flex-col gap-5 p-12 rounded-3xl mt-16">
-                <h1 class="text-[#e82770] text-3xl font-medium">I tuoi inviti</h1>
-                <div class="flex">
-                    <p class="bg-[#e82770] rounded-l-xl p-5">
-                        <svg width="72px" height="72px" viewBox="0 0 48 48" fill="none"
+                <div class="bg-[#F7F7F7] flex flex-col gap-5 p-12 rounded-3xl mt-16 m-4">
+    <h1 class="text-[#E82770] text-3xl font-medium">I tuoi inviti</h1>
+    <div class="hidden md:flex">
+        <p class="bg-[#E82770] rounded-l-xl p-5">
+            <svg width="65px" height="65px" viewBox="0 0 48 48" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
-                                <circle cx="24" cy="10" r="6" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round"></circle>
+                                <circle cx="24" cy="10" r="6"  stroke="white" stroke-width="4"
+                                    stroke-linecap="round" stroke-linejoin="round"></circle>
                                 <path d="M31 44V35L36 32L32 19C32 19 28 16 24 16C20 16 16 19 16 19L12 31L17 35V44"
                                     stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
                                 </path>
                             </g>
                         </svg>
-                    </p>
-                    <div class="flex flex-row justify-between w-full px-8 bg-white items-center text-[#e82770]">
-                        <h2 class=" text-3xl font-bold">Michele</h2>
-                        <h3 class="text-xl font-medium sm:w-[28%] border-l-2 border-gray-200 pl-3">Registrazione
-                            effettuata</h3>
-                    </div>
-
-                </div>
-                <div class="flex">
-                    <p class="bg-[#e82770] rounded-l-xl p-5">
-
-                        <svg width="72px" height="72px" viewBox="0 0 48 48" fill="none"
+        </p>
+        <div class="flex flex-row justify-between w-full px-8 bg-white items-center text-[#E82770]">
+            <h2 class="text-3xl font-bold">Michele</h2>
+            <h3 class="text-xl font-medium sm:w-[28%] border-l-2 border-gray-200 pl-3">Registrazione effettuata</h3>
+        </div>
+    </div>
+    <div class="md:hidden">
+        <div class="flex flex-col justify-start items-start  w-full p-6 shadow-lg rounded-xl bg-white  text-[#E82770]">
+            <h2 class="text-2xl font-bold">Michele</h2>
+            <h3 class="text-xl font-medium sm:w-[28%]  border-gray-200 ">Registrazione effettuata</h3>
+        </div>
+    </div>
+    <div class="hidden md:flex">
+                    <p class="bg-[#E82770] rounded-l-xl p-5">
+                        <svg width="65px" height="65px" viewBox="0 0 48 48" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
                             <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                             <g id="SVGRepo_iconCarrier">
-                                <circle cx="24" cy="10" r="6" stroke="white" stroke-width="4" stroke-linecap="round"
-                                    stroke-linejoin="round"></circle>
+                                <circle cx="24" cy="10" r="6"  stroke="white" stroke-width="4"
+                                    stroke-linecap="round" stroke-linejoin="round"></circle>
                                 <path d="M28 44V36H38L27.2308 16H20.7692L10 36H20V44" stroke="white" stroke-width="4"
                                     stroke-linecap="round" stroke-linejoin="round"></path>
                             </g>
                         </svg>
                     </p>
-                    <div class="flex flex-row justify-between w-full px-8 bg-white items-center text-[#e82770]">
+                    <div class="flex flex-row justify-between w-full px-8 bg-white items-center text-[#E82770]">
                         <h2 class=" text-3xl font-bold">Marzia</h2>
-                        <h3 class="text-xl font-medium sm:w-[28%] border-l-2 border-gray-200 pl-3">Richiesta inviata
-                        </h3>
+                        <h3 class="text-xl font-medium sm:w-[28%] border-l-2 border-gray-200 pl-3">Richiesta inviata</h3>
                     </div>
-
                 </div>
+                <div class="md:hidden">
+                    <div class="flex flex-col justify-between w-full p-6 shadow-lg rounded-xl bg-white items-start text-[#E82770]">
+                        <h2 class=" text-2xl font-bold">Marzia</h2>
+                        <h3 class="text-xl font-medium sm:w-[28%] ">Richiesta inviata</h3>
+                    </div>
+            </div></div>
             </div>
-        </div>
-    </div>
-
+            </div>
     <Footer></Footer>
 </template>
-
-
 <script>
-
 export default defineComponent({
     name: 'LinkComponent',
     name: 'ShareButtonComponent',
-
-
     setup() {
         const link = ref('http://localhost:3000/');
-
         const copyLink = () => {
             navigator.clipboard.writeText(link.value)
                 .then(() => {
                     console.log('Link copied to clipboard');
-
                 })
                 .catch(err => {
                     console.error('Failed to copy link: ', err);
                 });
         };
-
         return {
             link,
             copyLink,
@@ -204,17 +185,13 @@ export default defineComponent({
     data() {
     },
     methods: {
-
-
         shareLink() {
             const link = 'http://localhost:3000/';
             const message = `Check out this link: ${link}`;
             const encodedMessage = encodeURIComponent(message);
             const shareUrl = `https://wa.me/?text=${encodedMessage}`;
-
             window.open(shareUrl, '_blank');
         },
     }
-
 })
 </script>

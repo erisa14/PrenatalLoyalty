@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-[#f7f7f7] px-7 py-9 text-center rounded-2xl grid grid-col gap-24">
+    <div class="bg-[#F7F7F7] px-7 py-4 text-center rounded-2xl grid grid-col gap-20 lg:w-[95%] ">
         <div>
-            <h1 class="text-2xl font-semibold text-[#E72B6F] tracking-tight">Profilo Completato al</h1>
+            <h1 class="text-xl font-semibold text-[#E72B6F] tracking-tight">Profilo Completato al</h1>
             <div id="app">
-    <div class="circle-progress mt-8">
+    <div class="circle-progress mt-10">
       <svg :width="size" :height="size" viewBox="0 0 100 100">
         <circle
           class="circle-progress__background"
@@ -11,7 +11,7 @@
           :cx="center"
           :cy="center"
           fill="none"
-          stroke="#dddddd"
+          stroke="#DDDDDD"
           :stroke-width="backgroundStrokeWidth"
         />
         <circle
@@ -33,12 +33,12 @@
       </svg>
     </div>
     </div>
-            <span>7 campi completati su 10</span>
+            <span class=" text-sm mb-6">7 campi compilati su 10</span>
         </div>
         <div>
-            <h1 class="text-2xl font-semibold text-[#E72B6F] tracking-tight">Consigli</h1>
+            <h1 class="text-xl font-semibold text-[#E72B6F] tracking-tight">Consigli</h1>
             <Carousel :autoplay="8000" :wrap-around="true" :items-to-show="1" @after-change="updateActiveSlide"
-                v-model="activeSlide" class="mt-6">
+                v-model="activeSlide" class="-mx-10 mt-5">
                 <Slide v-for="(quote, index) in quotes" :key="index">
                     <div class="carousel-content bg-[white]" :class="{ 'active-quote': index === activeSlide }"
                         v-html="quote"></div>
@@ -49,15 +49,47 @@
                 </template>
             </Carousel>
         </div>
-        <a href="#" class="border border-[#E72B6F] rounded-3xl text-xl text-[#E72B6F] p-2 w-4/5 mx-auto mt-10">COMPLETA IL PROFILO</a>
+        <a href="#" class="border border-[#E72B6F] rounded-full text-lg px-4 text-[#E72B6F] self-center py-2 mx-auto mt-10">COMPLETA IL PROFILO</a>
     </div>
 </template>
-<script>
+
+<style>
+.carousel-content {
+  font-size: 14px;
+  color: black;
+  width: 75%;
+  height: max-content;
+  border: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-out;
+  padding-top: 9%;
+  padding-bottom: 9%;
+  padding-inline: 9%;
+  border-radius: 0.5rem !important;
+}
+.circle-container {
+ display: inline-block;
+ position: relative;
+}
+.circle {
+ position: relative;
+ overflow: hidden;
+}
+.circle-fill {
+ position: absolute;
+ top: 0;
+ left: 0;
+}
+.circle-progress {
+ display: inline-block;
+}
+</style>
+
+
+<script lang="typescript" >
 import { defineComponent } from 'vue'
 import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
-
 import 'vue3-carousel/dist/carousel.css'
-
 export default defineComponent({
     name: 'MyCarousel',
     components: {
@@ -73,18 +105,17 @@ export default defineComponent({
                 'Per ricevere le nostre notizie via SMS e/o mesasaggi WhatsApp inserisci il numero di telefono',
             ],
             activeSlide: 0,
-
-            size: 220,
-      percentage: 65, 
-      backgroundStrokeWidth: 6, 
-      foregroundStrokeWidth: 7
+            size: 190,
+      percentage: 65,
+      backgroundStrokeWidth: 4,
+      foregroundStrokeWidth: 5
         };
     },
     methods: {
-        updateActiveSlide(index) {
-            this.activeSlide = index;
-        },
+    updateActiveSlide(index){
+      this.activeSlide = index;
     },
+  },
     computed: {
     radius() {
         return 50 - Math.max(this.backgroundStrokeWidth, this.foregroundStrokeWidth) / 2;
@@ -97,30 +128,7 @@ export default defineComponent({
     },
     offset() {
         return this.circumference - (this.percentage / 100) * this.circumference;
-
     },
  },
 })
 </script>
-
-<style>
-.circle-container {
- display: inline-block;
- position: relative;
-}
-
-.circle {
- position: relative;
- overflow: hidden;
-}
-
-.circle-fill {
- position: absolute;
- top: 0;
- left: 0;
-}
-
-.circle-progress {
- display: inline-block;
-}
-</style>

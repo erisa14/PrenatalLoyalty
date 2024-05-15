@@ -1,8 +1,8 @@
 <template>
     <nav class="lg:w-[65%] md:w-[80%] w-[90%] mx-auto" >
         <div class=" flex flex-row justify-between">
-            <div class="flex flex-wrap ">
-                <ul class="flex py-4  mt-4 space-x-3  flex-row justify-between sm:mt-0">
+            <div class="flex flex-wrap lg:mt-4">
+                <ul class="flex py-4   space-x-3  flex-row justify-between mt-0">
                     <li>
                         <a class="inline-block logo bg-[#e82770] px-3 py-2" href="#" title="Prénatal">
                             <svg viewBox="0 0 410 79" data-logo-icon="data-logo-icon"
@@ -42,7 +42,7 @@
                     </li>
                     <li>
                         <a href="#"
-                            class="block text-lg leading-6 space-x-3 lg:pt-3 lg:text-2xl sm:w-1/6 lg:w-full font-sans font-semibold   text-[#e82770]"
+                            class="block text-lg leading-6 space-x-3 lg:pt-1 lg:text-2xl w-1/6 lg:w-full font-sans font-semibold   text-[#e82770]"
                             aria-current="page">Carta Fedeltà</a>
                     </li>
 

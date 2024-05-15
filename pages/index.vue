@@ -22,7 +22,7 @@
 
 
     <div class="md:w-[80%] lg:w-[60%] w-[95%] mx-auto">
-      <div class="flex lg:flex-row py-3 flex-col justify-evenly lg:gap-9 md:mt-12  lg:pt-20 px-5">
+      <div class="flex lg:flex-row py-3 flex-col justify-evenly lg:gap-9 md:mt-12 mt-5  lg:pt-20 px-5">
         <div class="lg:w-[60%] bg-white  flex flex-col justify-start lg:mt-7 items-center w-[98%]">
           <div class="">
             <h1 class="mb-2 lg:text-4xl text-2xl w-[60%] md:w-[30%] lg:w-full font-semibold  tracking-tight text-[#e82770]" style="color: #e82770;">I vantaggi di
@@ -308,7 +308,7 @@
 
 
 
-    <happyBox class=" mt-10"/>
+    <happyBox class="lg:w-[1180px] mt-10"/>
 
     <div class="lg:w-[62%] md:w-[80%] mt-16 mx-auto">
 

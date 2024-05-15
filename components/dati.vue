@@ -1,91 +1,92 @@
 <template>
-    <div class=" flex flex-col gap-4">
-    <div class="conteiner  bg-[#F7F7F7]  p-8 rounded-3xl ">
-        <div class="flex flex-row gap-24">
-    <div class="w-1/2 flex flex-col text-lg">
-    <h2 class="text-[#E72B6F] text-2xl font-semibold ">I tuoi dati</h2>
-    <ul class="font-semibold space-y-4 my-6">
-          <li>  Nome:
-          <span class="font-normal mx-2">Michela</span></li>
-        <li>Cognome:<span class="font-normal mx-2">Rossi</span></li>
-        <li>
-            Data di nascita:<span class="font-normal mx-2"></span>
-        </li>
-        <li>Genere:<span class="font-normal mx-2"></span></li>
-        <li>E-mail:<span class="font-normal mx-2">m.rossi1983@gmail.com</span></li>
-        <li>Cellulare:<span class="font-normal mx-2"></span></li>
-        <li>Indirizzo:<span class="font-normal mx-2"></span></li>
-        <li>CAP:<span class="font-normal mx-2"></span></li>
-        <li>Provincia:<span class="font-normal mx-2"></span></li>
-        <li>Data presunto parto:<span class="font-normal mx-2"></span></li>
-    </ul>
+  <div class="flex flex-row">
+  <div class=" flex flex-col gap-4">
+  <div class="conteiner  bg-[#F7F7F7]  p-8 rounded-3xl">
+      <div class="md:flex flex-row gap-24">
+  <div class="flex flex-col text-lg">
+  <h2 class="text-[#E72B6F] text-xl font-bold ">I tuoi dati</h2>
+  <ul class="font-semibold space-y-4 my-6 text-sm">
+        <li>  Nome:
+        <span class="font-normal mx-2">Michela</span></li>
+      <li>Cognome:<span class="font-normal mx-2">Rossi</span></li>
+      <li>
+          Data di nascita:<span class="font-normal mx-2"></span>
+      </li>
+      <li>Genere:<span class="font-normal mx-2"></span></li>
+      <li>E-mail:<span class="font-normal mx-2">m.rossi1983@gmail.com</span></li>
+      <li>Cellulare:<span class="font-normal mx-2"></span></li>
+      <li>Indirizzo:<span class="font-normal mx-2"></span></li>
+      <li>CAP:<span class="font-normal mx-2"></span></li>
+      <li>Provincia:<span class="font-normal mx-2"></span></li>
+      <li>Data presunto parto:<span class="font-normal mx-2"></span></li>
+  </ul>
+  </div>
+  <div class="w-full pr-3 text-base">
+    <h2 class="text-[#E72B6F] text-xl font-bold">I tuoi consensi</h2>
+    <div class="border-b-2  divide-[#DEDEDE] flex flex-row items-center  py-6 ">
+      <h3 class="md:w-3/4 w-full tracking-tight leading-5">Puoi ricevere le nostre comunicazioni</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" class="w-5 h-5" stroke="green">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+      </svg>
     </div>
-    <div class="w-2/3 text-xl pr-3">
-      <h2 class="text-[#E72B6F] text-2xl font-semibold">I tuoi consensi</h2>
-      <div class="border-b-2  divide-[#DEDEDE] flex flex-row items-center  py-6 ">
-        <h3 class="w-3/4 tracking-tight leading-5">Puoi ricevere le nostre comunicazioni</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" class="w-6 h-6" stroke="green">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-        </svg>
-      </div>
-      <div class="border-b-2 divide-[#DEDEDE] flex flex-row items-center  py-6">
-        <h3 class="w-3/4 tracking-tight leading-5">Puoi ricevere comunicazioni personalizzate</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" class="w-7 h-7" stroke="green">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-        </svg>
-      </div>
-      <div class="border-b-2 divide-[#DEDEDE] flex flex-row items-center  py-6">
-        <h3 class="w-3/4 tracking-tight leading-5" >Puoi rispondere a survey e sondaggi</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" class="w-7 h-7" stroke="red">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-        </svg>
-      </div>
-      <div class="border-b-2  divide-[#DEDEDE] flex flex-row items-center  py-6">
-        <h3 class="w-3/4 tracking-tight leading-5">Puoi ricevere comunicazioni da altre società del Gruppo e/o da soggetti Terzi</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" class="w-7 h-7" stroke="red">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-        </svg>
-      </div>
+    <div class="border-b-2 divide-[#DEDEDE] flex flex-row items-center  py-6">
+      <h3 class="md:w-3/4 w-full tracking-tight leading-5">Puoi ricevere comunicazioni personalizzate</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" class="w-5 h-5" stroke="green">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+      </svg>
     </div>
+    <div class="border-b-2 divide-[#DEDEDE] flex flex-row items-center  py-6">
+      <h3 class="md:w-3/4 w-full tracking-tight leading-5" >Puoi rispondere a survey e sondaggi</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" class="w-5 h-5" stroke="red">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
     </div>
-    <div class="flex flex-col px-3">
-        <h1 class="text-[#E72B6F] text-2xl font-semibold mb-4">La tua famiglia</h1>
-        <div class="grid grid-cols-2 gap-x-5 gap-y-2">
-            <div class="flex items-center  bg-white border border-gray-200 rounded-md shadow max-w-lg h-28 ">
-                <img class="object-cover w-full rounded-t-lg h-44 md:h-full md:w-16 md:rounded-none md:rounded-s-lg" src="assets\boyy.png" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                    <span class="mb-1 text-lg font-semibold tracking-tight text-[#E72B6F] dark:text-white">Name</span>
-                    <p class=" font-semibold tracking-tighter dark:text-gray-400">Data di nascita:</p>
-                    <h6 class="font-semibold tracking-tighter">Genere:</h6>
-                </div>
+    <div class="border-b-2  divide-[#DEDEDE] flex flex-row items-center  py-6">
+      <h3 class="md:w-3/4 w-full tracking-tight leading-5">Puoi ricevere comunicazioni da altre società del Gruppo e/o da soggetti Terzi</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" class="w-5 h-5" stroke="red">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+    </div>
+  </div>
+  </div>
+  <div class="flex flex-col px-3 w-full">
+      <h1 class="text-[#E72B6F] text-xl font-bold mb-4">La tua famiglia</h1>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-2">
+        <div class="flex items-center bg-white border border-gray-200 rounded-md shadow h-24">
+            <img class="object-cover w-16 h-28 rounded-t-none md:w-16 md:h-full md:rounded-none md:rounded-l-lg rounded-l-lg" src="assets/boyy.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <span class="mb-1 text-base font-semibold tracking-tight text-[#E72B6F] dark:text-white">Name</span>
+                <p class="font-semibold text-sm tracking-tighter dark:text-gray-400">Data di nascita:</p>
+                <h6 class="font-semibold text-sm  tracking-tighter">Genere:</h6>
             </div>
-            <div class="flex items-center bg-white border rounded-lg shadow max-w-lg h-28 ">
-                <img class="object-cover w-full rounded-t-lg h-44 md:h-full md:w-16 md:rounded-none md:rounded-s-lg" src="assets\girl.png" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                  <span class="mb-1 text-lg font-semibold tracking-tight text-[#E72B6F] dark:text-white">Name</span>
-                    <p class=" font-semibold tracking-tighter dark:text-gray-400">Data di nascita: <span class="font-normal">03/05/2020</span></p>
-                    <h6 class="font-semibold tracking-tighter">Genere:</h6>
-                </div>
-            </div>
-        
-          <div class="flex items-center bg-white border  rounded-lg shadow max-w-lg h-28 ">
-                <img class="object-cover w-full rounded-t-lg h-44 md:h-full md:w-16 md:rounded-none md:rounded-s-lg" src="assets\girl.png" alt="">
-                <div class="flex flex-col justify-between p-4 leading-normal">
-                  <span class="mb-1 text-lg font-semibold tracking-tight text-[#E72B6F] dark:text-white">Name</span>
-                    <p class=" font-semibold tracking-tighter dark:text-gray-400">Data di nascita:</p>
-                    <h6 class="font-semibold tracking-tighter">Genere:</h6>
-                </div>
+          </div>
+          <div class="flex items-center bg-white border rounded-lg shadow h-24">
+            <img class="object-cover w-16 h-28 rounded-t-none md:w-16 md:h-full md:rounded-none md:rounded-l-lg rounded-l-lg" src="assets/girl.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <span class="mb-1 text-base font-semibold tracking-tight text-[#E72B6F] dark:text-white">Name</span>
+                <p class="font-semibold text-sm  tracking-tighter dark:text-gray-400">Data di nascita: <span class="font-normal">03/05/2020</span></p>
+                <h6 class="font-semibold text-sm  tracking-tighter">Genere:</h6>
             </div>
         </div>
-      <a href="#" type="button" class="bg-[#E72B6F] self-center text-white  py-3 px-5 w-40 rounded-full text-xl text-center mt-5">MODIFICA</a>
-</div>
+        <div class="flex items-center bg-white border rounded-lg shadow h-24">
+            <img class="object-cover w-16 h-28 rounded-t-none md:w-16 md:h-full md:rounded-none md:rounded-l-lg rounded-l-lg" src="assets/girl.png" alt="">
+            <div class="flex flex-col justify-between p-4 leading-normal">
+                <span class="mb-1 text-base font-semibold tracking-tight text-[#E72B6F] dark:text-white">Name</span>
+                <p class="font-semibold text-sm  tracking-tighter dark:text-gray-400">Data di nascita:</p>
+                <h6 class="font-semibold text-sm  tracking-tighter">Genere:</h6>
+            </div>
+        </div>
       </div>
-      <div class="flex flex-col  px-8 py-7 rounded-3xl border border-b-7 border-gray-300 text-xl">
-      <h2 class="text-[#E72B6F] text-2xl font font-bold mb-4">I tuoi badge</h2>
-      <p>Completa le azioni per sbloccare più badge possibili!</p>
-      <div class="flex flex-row space-x-2 translate-y-8 ">
-        <span class="rounded-full  bg-[#F9ECED] flex items-center justify-center">
-          <div class="rounded-full w-24 h-24 bg-[#F9ECED] flex items-center justify-center">
+      <a href="#" type="button" class="bg-[#E72B6F] self-start md:self-center text-white py-2 px-6  rounded-full text-lg text-center mt-5">MODIFICA</a>
+</div>
+    </div>
+      <div class="flex flex-col px-8 py-7 rounded-3xl border border-b-7 border-gray-300 text-xl">
+  <h2 class="text-[#E72B6F] text-lg gap-3 font font-bold mb-4">I tuoi badge</h2>
+      <p class=" text-sm " >Completa le azioni per sbloccare più badge possibili!</p>
+      <!-- <div class="flex md:flex-row md:space-x-2 md:translate-y-8 w-2/5 md:w-full"> -->
+        <div class="grid grid-cols-4 md:flex flex-row gap-4 mt-8">
+        <span class="rounded-full  bg-[#F9ECED] flex items-center justify-center ">
+          <div class="rounded-full lg:w-16 lg:h-16 bg-[#F9ECED] flex items-center justify-center ">
             <svg fill="#E72B6F" height="40px" width="60px" version="1.2" baseProfile="tiny" id="Layer_1"
               xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-217 51 256 256"
               xml:space="preserve">
@@ -101,8 +102,8 @@
           </div>
         </span>
         <span class="rounded-full  bg-[#F9ECED] flex items-center justify-center">
-          <div class="rounded-full  w-24 h-24 bg-[#F9ECED] flex items-center justify-center">
-            <svg viewBox="0 0 24 24" fill="none" height="40px" width="40px" xmlns="http://www.w3.org/2000/svg"
+          <div class="rounded-full lg:w-16 lg:h-16  bg-[#F9ECED] flex items-center justify-center">
+            <svg viewBox="0 0 24 24" fill="none" height="32px" width="32px" xmlns="http://www.w3.org/2000/svg"
               stroke="#E72B6F">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
@@ -116,8 +117,8 @@
           </div>
         </span>
         <span class="rounded-full  bg-[#F9ECED] flex items-center justify-center ">
-          <div class="rounded-full  w-24 h-24 bg-[#F9ECED] flex items-center justify-center">
-            <svg viewBox="0 0 24 24" fill="none" width="50px" height="50px" xmlns="http://www.w3.org/2000/svg">
+          <div class="rounded-full lg:w-16 lg:h-16  bg-[#F9ECED] flex items-center justify-center">
+            <svg viewBox="0 0 24 24" fill="none" width="32px" height="32px" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="1"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -129,17 +130,17 @@
           </div>
         </span>
         <span class="rounded-full  bg-[#F9ECED] flex items-center justify-center">
-          <div class="rounded-full   w-24 h-24 bg-[#F9ECED] flex items-center justify-center">
-            <svg fill="#E72B6F" width="30px" height="30px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
+          <div class="rounded-full lg:w-16 lg:h-16 bg-[#F9ECED] flex items-center justify-center">
+            <svg fill="#E72B6F" width="32px" height="32px" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 1694.235h1920V226H0v1468.235ZM112.941 376.664V338.94H1807.06v37.723L960 1111.233l-847.059-734.57ZM1807.06 526.198v950.513l-351.134-438.89-88.32 70.475 378.353 472.998H174.042l378.353-472.998-88.32-70.475-351.134 438.89V526.198L960 1260.768l847.059-734.57Z"
                 stroke-width="1" />
             </svg>
           </div>
         </span>
-        <span class="rounded-full  bg-[#F9ECED] flex items-center justify-center">
-          <div class="rounded-full  w-24 h-24 bg-[#F9ECED] flex items-center justify-center">
-            <svg viewBox="0 0 24 24" width="50px" height="50px" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="rounded-full  bg-[#F9ECED] flex items-center justify-center ">
+          <div class="rounded-full lg:w-16 lg:h-16  bg-[#F9ECED] flex items-center justify-center">
+            <svg viewBox="0 0 24 24" width="32px" height="32px" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
               <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
               <g id="SVGRepo_iconCarrier">
@@ -151,7 +152,7 @@
           </div>
         </span>
         <span class="rounded-full  bg-[#F9ECED] flex items-center justify-center">
-          <div class="rounded-full  w-24 h-24 bg-[#F9ECED] flex items-center justify-center">
+          <div class="rounded-full lg:w-16 lg:h-16 bg-[#F9ECED] flex items-center justify-center">
             <svg class="h-8 w-8 text-[#E72B6F] " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
               <circle cx="9" cy="21" r="1" />
@@ -161,8 +162,8 @@
           </div>
         </span>
         <span class="rounded-full  bg-[#F9ECED] flex items-center justify-center">
-          <div class="rounded-full    w-24 h-24 bg-[#F9ECED] flex items-center justify-center">
-            <svg fill="#E72B6F" width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <div class="rounded-full lg:w-16 lg:h-16  bg-[#F9ECED] flex items-center justify-center">
+            <svg fill="#E72B6F" width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <circle cx="12" cy="10" r="7" fill="none" stroke="#E72B6F" stroke-width="2" />
               <path d="M16.11 15.66 17 21 12 20 7 21 7.89 15.66" fill="none" stroke="#E72B6F" stroke-width="1"
                 stroke-linecap="round" stroke-linejoin="round" />
@@ -171,8 +172,8 @@
         </span>
       </div>
       <a href="#" type="button"
-        class="bg-[#E72B6F]  text-white py-4 w-48 mx-auto rounded-full text-center  mt-24">SCOPRI
+        class="bg-[#E72B6F]  text-white py-2 px-8 mx-auto rounded-full text-center font-medium text-lg mt-10">SCOPRI
         DI PIÙ</a>
     </div>
-  </div>
-    </template>
+  </div></div>
+</template>

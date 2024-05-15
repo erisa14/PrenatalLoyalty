@@ -1,7 +1,7 @@
 <template>
-    <div class=" lg:w-[62%] md:w-[80%] w-[92%] justify-end flex flex-col lg:gap-8 gap-4 mt-16">
+    <div class=" lg:w-[63%] md:w-[80%] w-[92%] flex flex-col lg:gap-8 gap-4 mt-16">
         <h1 class="text-[#E72B6F] lg:text-4xl lg:text-left text-center text-xl font-bold ">Altri vantaggi esclusivi</h1>
-        <h3 class="lg:text-xl lg:text-left lg:w-full lg:self-start lg:leading-normal text-base leading-4 self-center text-center w-2/3 tracking-tight">Scopri le offerte attive in questo momento con i nostri partner selezionati, tutte riservate ai soli clienti registrati</h3>
+        <h3 class="lg:text-[17px] lg:text-left  lg:self-start lg:leading-normal self-center text-center tracking-tight">Scopri le offerte attive in questo momento con i nostri partner selezionati, tutte riservate ai soli clienti registrati</h3>
       
         <div class="lg:flex gap-5 hidden">
         <img src="https://www.bitrefill.com/primg/w350h212/lastminute_com-belgium-holiday-flight-_-hotel-packages-belgium.webp" class="vantaggi-image" alt="">
@@ -95,7 +95,7 @@ export default defineComponent({
 @import 'swiper/swiper-bundle.css';
 
 .vantaggi-image {
-    width: 18%;
+    width: 22%;
     height: auto;
     border-radius: 0.5rem;
   }
