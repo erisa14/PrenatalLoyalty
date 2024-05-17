@@ -1,35 +1,37 @@
 <template>
   <Navbar />
   <div class=" lg:w-[65%] md:w-[80%] w-[92%] mx-auto flex flex-col mt-16">
-    <div class="md:flex flex-row">
-      <div>
+    <LeftNav class="lg:hidden block"/>
+
+    <div class="flex lg:flex-row lg:gap-5 gap-6 flex-col">
+      <div class=" lg:block hidden">
         <LeftNav/>
       </div>
-      <div class="md:flex flex-col gap-6 lg:w-[51%]  mx-6 ">
+      <div class="flex flex-col gap-6 lg:w-[51%] md:w-[80%] w-[92%] mx-auto lg:mt-0 md:mt-5 mt-4">
         <div class="bg-[#F9ECED] px-6 pt-2 pb-28 rounded-3xl">
         <h1 class="text-[#E73B7A] text-xl font-bold tracking-tighter py-5">La tua Card</h1>
         <div class=" flex md:flex-row flex-col gap-6">
           <div class="">
-          <img src="/assets/prenatal_card.png" class="rounded-3xl w-auto md:h-48 h-40" alt="Prenatal Card">
-          <h2 class="-translate-y-10 text-center font-semibold text-lg tracking-wider">{{ cardNumber }}</h2>
+          <img src="/assets/prenatal_card.png" class="rounded-3xl w-auto lg:h-52 md:h-40 h-52" alt="Prenatal Card">
+          <h2 class="-translate-y-10 text-center font-semibold md:text-lg text-sm tracking-wider">{{ cardNumber }}</h2>
         </div>
         <div>
-          <h2 class="text-[#E73B7A] text-base tracking-tighter font-semibold">Numero Card:</h2>
-          <p class=" font-semibold text-lg tracking-tight">{{ cardNumber }}</p>
+          <h2 class="text-[#E73B7A] text-base tracking-tighter font-semibold">Numero Card:  <span class="text-black mx-4 text-lg">{{ cardNumber }}</span></h2>
+          <p class=" font-semibold text-lg tracking-tight md:block hidden">{{ cardNumber }}</p>
           <p class="flex text-base gap-2 tracking-tighter"><h2 class="text-[#E73B7A] font-semibold">Stato:</h2>Attiva</p>
         </div>
         </div>
       </div>
-        <Dati class="hidden md:flex"/>
+        <Dati class="hidden lg:flex"/>
       </div>
 
 
       <div class="grid grid-col gap-7">
-        <div class="grid grid-col bg-[#EAF1FD] px-7 py-9 text-center rounded-2xl lg:w-[95%]">
+        <div class="grid grid-col bg-[#EAF1FD] px-7 py-8 text-center rounded-2xl lg:w-[95%] md:w-[80%] w-[92%] mx-auto">
           <h1 class="text-xl font-bold  text-[#E72B6F]">Passa a VIP Club
           </h1>
           <h3 class="text-sm w-3/4 tracking-tight mx-auto mt-2 font-semibold">Scopri tutti i vantaggi che ti aspettano</h3>
-          <Carousel :autoplay="8000" :wrap-around="true" :items-to-show="1" @after-change="updateActiveSlide"
+          <Carousel :wrap-around="true" :items-to-show="1" @after-change="updateActiveSlide"
             v-model="activeSlide" class="-mx-10 mt-4">
             <Slide v-for="(quote, index) in quotes" :key="index">
               <div class="carousel-content bg-[white]" :class="{ 'active-quote': index === activeSlide }"
@@ -44,9 +46,9 @@
             class="bg-[#E72B6F] self-center mx-auto py-2 px-6 text-base text-white rounded-full mt-8">ACQUISTA VIP
             CARD</a>
         </div>
-        <profileCompletato />
-        <Dati class="md:hidden flex "/>
-        <div class="grid grid-col px-9 pt-4 rounded-3xl border border-gray-300 gap-6 lg:w-[95%]">
+        <profileCompletato class=" lg:w-[95%] md:w-[80%] w-[92%]  mx-auto pb-7 pt-6"/>
+        <Dati class="lg:hidden flex"/>
+        <div class="grid grid-col px-9 pt-4 rounded-3xl border border-gray-300 gap-3 lg:w-[95%] md:w-[80%] w-[88%] mx-auto">
           <h1 class="text-[#E82770] text-xl font-semibold">Invita un amico</h1>
           <div class=" flex flex-col -space-y-3 ">
             <p class="text-sm w-2/3 tracking-tight leading-4  -translate-y-3  ">Condividi i link con un tuo amico e ricevi uno sconto di 10
@@ -80,7 +82,7 @@
       </div>
 
     </div>
-    <Vantaggi class="ml-72" />
+    <Vantaggi class="lg:ml-72 mx-auto" />
     <HappyBox />
   </div>
   <Footer></Footer>

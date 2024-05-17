@@ -1,5 +1,7 @@
+
+
 <template>
-    <div class="bg-[#F7F7F7] px-7 py-4 text-center rounded-2xl grid grid-col gap-20 lg:w-[95%] ">
+    <div class="bg-[#F7F7F7] px-7 py-5 text-center rounded-2xl grid grid-col gap-[60px]">
         <div>
             <h1 class="text-xl font-semibold text-[#E72B6F] tracking-tight">Profilo Completato al</h1>
             <div id="app">
@@ -33,11 +35,11 @@
       </svg>
     </div>
     </div>
-            <span class=" text-sm mb-6">7 campi compilati su 10</span>
+            <span class=" text-sm mb-6 md:block hidden">7 campi compilati su 10</span>
         </div>
         <div>
             <h1 class="text-xl font-semibold text-[#E72B6F] tracking-tight">Consigli</h1>
-            <Carousel :autoplay="8000" :wrap-around="true" :items-to-show="1" @after-change="updateActiveSlide"
+            <Carousel :wrap-around="true" :items-to-show="1" @after-change="updateActiveSlide"
                 v-model="activeSlide" class="-mx-10 mt-5">
                 <Slide v-for="(quote, index) in quotes" :key="index">
                     <div class="carousel-content bg-[white]" :class="{ 'active-quote': index === activeSlide }"
@@ -49,7 +51,7 @@
                 </template>
             </Carousel>
         </div>
-        <a href="#" class="border border-[#E72B6F] rounded-full text-lg px-4 text-[#E72B6F] self-center py-2 mx-auto mt-10">COMPLETA IL PROFILO</a>
+        <a href="#" class="border border-[#E72B6F] rounded-full text-lg px-4 text-[#E72B6F] self-center py-2 mx-auto mt-10 w-full">COMPLETA IL PROFILO</a>
     </div>
 </template>
 
@@ -66,6 +68,16 @@
   padding-bottom: 9%;
   padding-inline: 9%;
   border-radius: 0.5rem !important;
+}
+
+@media (max-width: 640px) {
+ .carousel__prev {
+    display: none;
+  }
+
+ .carousel__next {
+    display: none;
+  }
 }
 .circle-container {
  display: inline-block;
@@ -86,7 +98,7 @@
 </style>
 
 
-<script lang="typescript" >
+<script lang="ts" >
 import { defineComponent } from 'vue'
 import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
@@ -115,6 +127,26 @@ export default defineComponent({
     updateActiveSlide(index){
       this.activeSlide = index;
     },
+
+    updateSize() {
+      const screenWidth = window.innerWidth;
+      if (screenWidth<670) {
+        this.size=150;
+      }
+
+      else{
+       this.size=190;
+
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('resize', this.updateSize);
+    this.updateSize(); 
+
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.updateSize);
   },
     computed: {
     radius() {
@@ -131,4 +163,4 @@ export default defineComponent({
     },
  },
 })
-</script>
+</script> 

@@ -49,7 +49,7 @@
                 </ul>
             </div>
 
-            <button @click="toggleMenu" class="block    lg:hidden  focus:outline-none right-0">
+            <button @click="toggleMenu=true" class=" absolute block mt-4    lg:hidden  focus:outline-none right-0">
                 <svg class="h-12 w-12 rounded-3xl p-2  bg-[#e82770] text-white" fill="none" stroke="currentColor"
                     viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
@@ -58,10 +58,35 @@
 
             </button>
 
-            <div class=" sm:flex-row  mt-8 w-auto md:order-1">
 
-                <ul :class="menuOpen ? 'block' : 'hidden'"
-                    class="lg:flex flex-col font-medium p-4 lg:p-0 sm:space-x-5 lg:flex-row  w-full ">
+            <div class="lg:hidden block">
+          <div v-if="toggleMenu" class="alert">
+            <button class="close-btn md:right-8 right-20" @click="closeMenu">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="14" height="16" viewBox="0 0 256 256" xml:space="preserve">
+      <defs>
+      </defs>
+      <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 1; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+          <path d="M 6 90 c -1.536 0 -3.071 -0.586 -4.243 -1.758 c -2.343 -2.343 -2.343 -6.142 0 -8.484 l 78 -78 c 2.342 -2.343 6.143 -2.343 8.484 0 c 2.344 2.343 2.344 6.142 0 8.485 l -78 78 C 9.071 89.414 7.536 90 6 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+          <path d="M 84 90 c -1.535 0 -3.071 -0.586 -4.242 -1.758 l -78 -78 c -2.343 -2.343 -2.343 -6.142 0 -8.485 c 2.343 -2.343 6.143 -2.343 8.485 0 l 78 78 c 2.344 2.343 2.344 6.142 0 8.484 C 87.071 89.414 85.535 90 84 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+      </g>
+      </svg>
+          </button>
+          <div class="flex items-center p-9">
+              <div class="rounded-full md:w-80 w-44 h-24 md:h-32 bg-[#F7F7F7]">
+                <img src="assets/clubCard.png" alt="Photo" class="md:w-28 w-28 h-auto rounded-xl -rotate-12 md:mt-7 mt-4 md:mx-4 px-2 p-2">
+              </div>
+              <h1 class="ml-6 text-[#435D87] font-semibold md:text-3xl text-xl ">{{ alertText }}</h1>
+            </div>
+            <button class="btn m-8 rounded-3xl text-xl" @click="submit">ACQUISTA VIP CARD</button>
+          </div>
+      </div>
+      <div v-if="toggleMenu" class="overlay"></div>
+
+
+            <div class=" sm:flex-row  mt-8 lg:w-auto  md:order-1 ">
+
+                <ul
+                    class="lg:flex hidden flex-col font-medium p-4 lg:p-0 sm:space-x-5 lg:flex-row  md:w-full md:h-auto">
                     <li>
                         <a href="#"
                             class="flex flex-row md:space-x-3 text-[#e82770] rounded font-semibold text-sm lg:text-lg pt-2"
@@ -105,18 +130,93 @@
 #menuToggle:hover svg {
     transform: rotate(90deg);
 }
+
+
+.pink-bullets li::before {
+              content: "•";
+              color: #F2D5D6;
+              display: inline-block;
+              width: 1em;
+              font-size: 1.9em;
+              margin-left: 0em;
+          }
+      .alert {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        max-width: 650px;
+        width: 110vw;
+        max-height: 350px;
+        height: 100vw;
+        z-index: 999;
+      }
+      .close-btn {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 2rem;
+      }
+      .btn {
+        padding: 12px 16px;
+        background-color: #E72B6F;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        max-width: 550px;
+        width: 80vw;
+      }
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+      }
+      .shadow-gray {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      }
+      @media screen and (max-width: 786px) {
+        .solosvg{
+            display: none;
+         }
+      }
 </style>
 <script>
+// export default {
+//     data() {
+//         return {
+//             menuOpen: false
+//         };
+//     },
+//     methods: {
+//         toggleMenu() {
+//             this.menuOpen = !this.menuOpen;
+//         }
+//     }
+// };
 export default {
-    data() {
-        return {
-            menuOpen: false
-        };
+data() {
+    return {
+        toggleMenu: false,
+      alertText: 'Questa offerta è riservata esclusivamente ai clienti con VIP Card.'
+    };
+  },
+  methods: {
+    submit() {
+      this.toggleMenu = true;
     },
-    methods: {
-        toggleMenu() {
-            this.menuOpen = !this.menuOpen;
-        }
+    closeMenu() {
+      this.toggleMenu = false;
     }
+  }
 };
 </script>

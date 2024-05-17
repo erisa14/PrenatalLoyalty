@@ -8,13 +8,13 @@
     <figure class="relative mx-auto top-5 ">
 
       <img class="rounded-3xl lg:w-[65%] md:w-[80%] w-[90%] md:h-auto h-[53vh] mx-auto md:object-cover object-cover filter brightness-50 md:fill-none md:brightness-100" src="/assets/indexImage.jpg" alt="image description" style="object-position: 32% 50%;">
-      <figcaption class="absolute self-center flex flex-col lg:space-y-5 lg:w-[43%]  lg:right-10 lg:top-14  md:w-[45%] md:right-0 md:top-12 md:space-y-1 top-14 w-[90%] space-y-4  align-middle  justify-center text-white">
+      <figcaption class="absolute self-center flex flex-col lg:space-y-5 lg:w-[43%]  lg:right-10 lg:top-14  md:w-[45%] md:right-0 md:top-12 md:space-y-1 top-24 w-[90%] space-y-4  align-middle  justify-center text-white">
         <h1 class="lg:text-5xl lg:w-2/5 lg:self-start lg:text-left md:text-xl md:w-4/5 md:self-start md:text-left w-[55%] text-4xl self-center text-center  font-semibold">Entra nel club di Prénatal</h1>
-        <p class="lg:w-2/4 lg:text-left lg:self-start lg:text-lg lg:tracking-tight lg:leading-5 md:text-left md:self-start md:tracking-tight md:w-[81%] md:text-sm md:leading-4 w-[85%] tracking-tight justify-center self-center leading-5">Registrati gratuitamente per un mondo di promozioni dedicate,
+        <p class="lg:w-2/4 lg:text-left lg:self-start lg:text-lg lg:tracking-tight lg:leading-5 md:text-left md:self-start md:tracking-tight md:w-[81%] md:text-sm md:leading-4 w-[85%] tracking-tight justify-center self-center md:ml-0 ml-10 leading-5">Registrati gratuitamente per un mondo di promozioni dedicate,
           o acquista una VIP Card per accedere a tutti i vantaggi aggiuntivi.</p>
         <a href="#" class="lg:self-start lg:py-2 lg:text-lg  md:px-4 md:py-2 md:text-base md:mt-3 md:self-start md:mb-2 px-6 py-2 rounded-3xl self-center text-white bg-[#e82770]" type="button">ACCEDI
           O REGISTRATI</a>
-        <h5 class="lg:text-left lg:text-sm md:text-left md:text-xs text-xs text-center top-4">Hai perso la tua card? <a href="#" class="underline">Recupera il codice</a></h5>
+        <h5 class="lg:text-left lg:text-sm md:text-left md:text-xs text-xs text-center top-6">Hai perso la tua card? <a href="#" class="underline">Recupera il codice</a></h5>
       </figcaption>
 
     </figure>
@@ -293,7 +293,7 @@
       </figcaption>
     </figure>
     <figure class=" md:relative md:mx-auto  md:grid lg:w-[62%] md:w-[80%]  md:mt-10 hidden">
-      <img src="https://card.prenatal.com/_ipx/f_webp/images/parental-skills.png" alt="image" class=" lg:w-full lg:h-[30vh]   mx-auto filter rounded-3xl" >
+      <img src="/assets/pr-skills.png" alt="image" class=" lg:w-full lg:h-[30vh]   mx-auto filter rounded-3xl" >
       <figcaption
         class="absolute self-center lg:px-4 grid grid-col lg:gap-5 md:gap-3 lg:w-[47%]  lg:right-12 md:w-[50%] md:right-3  ">
         <h1 class="lg:text-3xl font-semibold  text-[#e82770]">Parental Skills at Work</h1>
@@ -308,7 +308,7 @@
 
 
 
-    <happyBox class="lg:w-[1180px] mt-10"/>
+    <happyBox class="lg:w-[1180px] md:w-[80%] mt-10"/>
 
     <div class="lg:w-[62%] md:w-[80%] mt-16 mx-auto">
 

@@ -1,5 +1,5 @@
 <template>
-    <div class=" lg:w-[63%] md:w-[80%] w-[92%] flex flex-col lg:gap-8 gap-4 mt-16">
+    <div class=" lg:w-[63%] md:w-[80%] w-[92%] flex flex-col gap-4 mt-16">
         <h1 class="text-[#E72B6F] lg:text-4xl lg:text-left text-center text-xl font-bold ">Altri vantaggi esclusivi</h1>
         <h3 class="lg:text-[17px] lg:text-left  lg:self-start lg:leading-normal self-center text-center tracking-tight">Scopri le offerte attive in questo momento con i nostri partner selezionati, tutte riservate ai soli clienti registrati</h3>
       
@@ -12,7 +12,7 @@
       </div>
    
 
-        <div class="w-[92%] lg:hidden">
+        <div class="w-[92%] lg:hidden mx-auto">
             <swiper
     :modules="modules"
     :loop="true"
@@ -44,7 +44,7 @@
 
     </swiper>
         </div>
-        <button class=" border border-[#E72B6F] text-[#E72B6F] rounded-3xl lg:w-[180px] lg:py-2 w-[87%] py-2 lg:mx-auto text-xl mb-5">SCOPRI DI PIÚ</button>
+        <button class=" border border-[#E72B6F] text-[#E72B6F] rounded-3xl lg:w-[180px] lg:py-2 w-[87%] py-2 mx-auto text-xl mb-5">SCOPRI DI PIÚ</button>
     </div>
 </template>
 
